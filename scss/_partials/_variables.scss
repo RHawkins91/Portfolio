@@ -1,0 +1,24 @@
+// Colours
+$white  : white;
+$grey   : gray;
+$black  : black;
+$purple : #9B4F96;
+$pink   : #D60270;
+$blue   : #0038A8;
+$red    : red;
+
+// Dictionaries
+
+// Fonts
+	// Urls
+	$url_font__header--reg   : "../fonts/Kalam-Regular.ttf";
+	$url_font__header--bold  : "../fonts/Kalam-Bold.ttf";
+	$url_font__header--light : "../fonts/Kalam-Light.ttf";
+	$url_font__body--reg     : "../fonts/Lemonada-VariableFont_wght.ttf";
+	// Stacks
+	$font__header--stack : Kalam;
+	$font__body--stack   : Lemonada;
+	// Weights
+	$font__weight--light : 300;
+	$font__weight--reg   : 400;
+	$font__weight--bold  : 700;

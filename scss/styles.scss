@@ -1,0 +1,35 @@
+// Imports
+@import "_partials/_variables.scss", "_partials/_config.scss", "_partials/_mixins.scss", "_partials/_utils.scss";
+
+// Styling
+html {
+	//height: 100%;
+	background-image: linear-gradient(to bottom, pink, blue );
+	background-repeat: no-repeat;
+	//overflow-y: hidden;
+}
+body {
+	height: 110%;
+	
+}
+img {
+	border: 2px $purple solid;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-sizing: border-box;
+	box-shadow: 0em 0em 1em 1em rgb(0, 0, 0, 0.2);
+}
+.nameplate {
+	height: 100%;
+	margin: 10% 0 10% 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.navbar {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}

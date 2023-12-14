@@ -1,0 +1,46 @@
+// Fonts
+//Body
+@font-face {
+	font-family: "Lemonada";
+	src: url($url_font__body--reg) format('truetype');
+	font-weight: $font__weight--light $font__weight--bold;
+}
+//Headers
+@font-face {
+	font-family: "Kalam";
+	src: url($url_font__header--reg) format('truetype');
+	font-weight: $font__weight--reg;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Kalam";
+	src: url($url_font__header--bold) format('truetype');
+	font-weight: $font__weight--bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Kalam";
+	src: url($url_font__header--light) format('truetype');
+	font-weight: $font__weight--light;
+	font-style: normal;
+}
+// Breakpoints
+
+// Defaults
+* {
+	font-size: 1em;
+	font-family: $font__body--stack;
+}
+h1,
+h2,
+h3 {
+	font-family: $font__header--stack;
+	font-weight: $font__weight--bold;
+	color: $black;
+}
+h1 {
+	font-size: 2.5em;
+}
+h2 {
+	font-size: 1.5em;
+}

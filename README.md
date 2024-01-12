@@ -2,4 +2,10 @@
 
 ## TO DO:
 
-**Everything**
+- **Add homepage content**
+- **Add contact form**
+- **Add pages**
+- **Add art**
+- **Connect links**
+- **Styling passes**
+- **Peer testing**

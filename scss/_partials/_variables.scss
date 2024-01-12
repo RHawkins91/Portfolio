@@ -1,3 +1,4 @@
+//Variables
 // Colours
 $white  : white;
 $grey   : gray;
@@ -6,6 +7,18 @@ $purple : #9B4F96;
 $pink   : #D60270;
 $blue   : #0038A8;
 $red    : red;
+
+//gradient-stops
+$flag-yellow : #FEF42F;
+$flag-white  : #FFFFFF;
+$flag-purple : #9B59D0;
+$flag-black  : #000000;
+//Breakpoints
+
+$mobile : 576px;
+$tablet : 768px;
+$landscape : 992px;
+$desktop : 1080px;
 
 // Dictionaries
 

@@ -188,7 +188,7 @@ img {
 	flex-direction: column;
 	flex-wrap: nowrap;
 	// padding-top: 20px;
-	// padding-bottom: 20px;
+	padding-bottom: 10px;
 	margin-top: 10px;
 	margin-left: 200px;
 	margin-right: 70px;
@@ -227,8 +227,13 @@ img {
 			}
 		}
 		.contact-email-message {
-			justify-self: center;
-			width: calc(100% - 10px);
+			display: grid;
+			grid-template-columns: 100%;
+			justify-items: center;
+			textarea {
+				min-width: 100%;
+				margin-left: 10px;
+			}
 		}
 		.form-buttons {
 			display: grid;
@@ -236,6 +241,7 @@ img {
 			justify-items: center;
 			input {
 				width: 150px;
+				border-radius: 3px;
 			}
 		}
 	}

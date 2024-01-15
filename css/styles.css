@@ -464,6 +464,7 @@ img {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  padding-bottom: 10px;
   margin-top: 10px;
   margin-left: 200px;
   margin-right: 70px;
@@ -501,8 +502,13 @@ img {
   height: 32px;
 }
 .contact-form-container .contact-form .contact-email-message {
-  justify-self: center;
-  width: calc(100% - 10px);
+  display: grid;
+  grid-template-columns: 100%;
+  justify-items: center;
+}
+.contact-form-container .contact-form .contact-email-message textarea {
+  min-width: 100%;
+  margin-left: 10px;
 }
 .contact-form-container .contact-form .form-buttons {
   display: grid;
@@ -511,6 +517,7 @@ img {
 }
 .contact-form-container .contact-form .form-buttons input {
   width: 150px;
+  border-radius: 3px;
 }
 
 /*# sourceMappingURL=styles.css.map */

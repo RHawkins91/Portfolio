@@ -72,18 +72,6 @@ h2 {
   content: "\eab0";
 }
 
-.netmatters-card {
-  background-color: white;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
-  min-height: 450px;
-  min-width: 340px;
-  line-height: 18px;
-  padding-bottom: 10px;
-}
-
 .netmatters-card:hover {
   background-color: #9B4F96;
   animation: hover-scale 1s ease-in-out 0s 1 normal forwards;
@@ -137,18 +125,6 @@ h2 {
 .netmatters-card-button :first-child {
   font-size: 13px;
   padding: 3px;
-}
-
-.placeholder-card {
-  background-color: white;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
-  min-height: 450px;
-  min-width: 340px;
-  line-height: 18px;
-  padding-bottom: 10px;
 }
 
 .placeholder-card:hover {
@@ -425,7 +401,7 @@ img {
   color: #000000;
 }
 
-.project-cards {
+.project-cards, .card-container {
   flex: 2;
   display: grid;
   grid-template-columns: 30% 30% 30%;
@@ -434,11 +410,20 @@ img {
   grid-gap: 20px;
 }
 
-.project-card {
+.project-card, .card {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 60% 15% 15% 10%;
   grid-row-gap: 0px;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+  min-height: 450px;
+  min-width: 340px;
+  line-height: 18px;
+  padding-bottom: 10px;
 }
 
 .card-image {
@@ -449,6 +434,32 @@ img {
   background-repeat: no-repeat;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+.card-title {
+  font-size: 24px;
+  width: 100%;
+  padding-bottom: 5px;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height: 24px;
+}
+
+.card-button {
+  background-color: blue;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  max-height: 100%;
+  max-width: 100%;
+  font-size: 18px;
+}
+.card-button :first-child {
+  font-size: 13px;
+  padding: 3px;
 }
 
 .socials-container {

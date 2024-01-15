@@ -10,6 +10,6 @@
 - **Connect links**
 	- About Me
 	- ~~Code Examples~~
-	- SCS Scheme
+	- ~~SCS Scheme~~
 - **Styling passes**
 - **Peer testing**

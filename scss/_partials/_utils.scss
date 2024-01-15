@@ -1,3 +1,49 @@
 // Loops
-
+@each $project, $colour in $proj-colours{
+	.#{$project}-card {
+		background-color: white;
+		// color: $colour;
+		border-radius: 10px;
+		//border: 3px solid grey;
+		-webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
+		-moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
+		box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
+		//width: 50%;
+		min-height: 450px;
+		min-width: 340px;
+		line-height: 18px;
+		padding-bottom: 10px;
+	}
+	.#{$project}-card-image {
+		background-image: url('../images/projects/#{$project}-proj.png');
+	}
+	.#{$project}-card-title {
+		color: $colour;
+		font-size: 22px;
+		padding-bottom: 5px;
+		text-align: center;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.#{$project}-card-blurb {
+		font-size: 18px;
+		color: $colour;
+		text-align: center;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.#{$project}-card-button {
+		background-color: $colour;
+		border-radius: 10px;
+		color: white;
+		text-align: center;
+		margin: auto;
+		padding: 10px;
+		max-height: 100%;
+		max-width: 100%;
+		//width: 100%;
+		//height: 100%;
+		// align-content: center;
+	}
+}
 // Functions

@@ -42,16 +42,103 @@ h2 {
   font-size: 1.5em;
 }
 
+.netmatters-card {
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+  min-height: 450px;
+  min-width: 340px;
+  line-height: 18px;
+  padding-bottom: 10px;
+}
+
+.netmatters-card-image {
+  background-image: url("../images/projects/netmatters-proj.png");
+}
+
+.netmatters-card-title {
+  color: #9B4F96;
+  font-size: 22px;
+  padding-bottom: 5px;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.netmatters-card-blurb {
+  font-size: 18px;
+  color: #9B4F96;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.netmatters-card-button {
+  background-color: #9B4F96;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.placeholder-card {
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+  min-height: 450px;
+  min-width: 340px;
+  line-height: 18px;
+  padding-bottom: 10px;
+}
+
+.placeholder-card-image {
+  background-image: url("../images/projects/placeholder-proj.png");
+}
+
+.placeholder-card-title {
+  color: #D60270;
+  font-size: 22px;
+  padding-bottom: 5px;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.placeholder-card-blurb {
+  font-size: 18px;
+  color: #D60270;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.placeholder-card-button {
+  background-color: #D60270;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  max-height: 100%;
+  max-width: 100%;
+}
+
 ul {
   list-style-type: none;
 }
 
 html {
-  height: 150%;
   background-repeat: no-repeat;
   background: rgb(254, 244, 47);
   background: linear-gradient(180deg, rgb(254, 244, 47) 0%, rgb(255, 255, 255) 35%, rgb(155, 89, 208) 59%, rgb(0, 0, 0) 100%);
-  background-size: 800% 800%;
+  background-size: 100% 100%;
   -webkit-animation: bg-gradient-anim 30s ease infinite;
   -moz-animation: bg-gradient-anim 30s ease infinite;
   -o-animation: bg-gradient-anim 30s ease infinite;
@@ -121,7 +208,7 @@ img {
 }
 
 .nameplate {
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,7 +222,7 @@ img {
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   font-size: 72px;
-  background-size: 800% 800%;
+  background-size: 1000% 1000%;
   -webkit-animation: txt-gradient-anim 26s ease infinite;
   -moz-animation: txt-gradient-anim 26s ease infinite;
   -o-animation: txt-gradient-anim 26s ease infinite;
@@ -224,6 +311,32 @@ img {
   align-self: center;
   width: 90px;
   color: #000000;
+}
+
+.project-cards {
+  flex: 2;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 50% 50%;
+  padding-left: 200px;
+  grid-gap: 20px;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 60% 15% 15% 10%;
+  grid-row-gap: 0px;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

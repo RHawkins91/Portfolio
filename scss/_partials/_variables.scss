@@ -21,7 +21,11 @@ $landscape : 992px;
 $desktop : 1080px;
 
 // Dictionaries
-
+	//Project card colours
+$proj-colours: (
+	netmatters  : $purple,
+	placeholder : $pink
+	);
 // Fonts
 	// Urls
 	$url_font__header--reg   : "../fonts/Kalam-Regular.ttf";

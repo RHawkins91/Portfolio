@@ -2,8 +2,6 @@
 
 ## TO DO:
 
-- **Add homepage content**
-- **Add contact form**
 - **Add pages**
 - **Add art**
 - **Connect links**

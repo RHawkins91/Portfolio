@@ -7,6 +7,7 @@ $purple : #9B4F96;
 $pink   : #D60270;
 $blue   : #0038A8;
 $red    : red;
+$github-primary : #4078c0;
 
 //gradient-stops
 $flag-yellow : #FEF42F;
@@ -25,6 +26,10 @@ $desktop : 1080px;
 $proj-colours: (
 	netmatters  : $purple,
 	placeholder : $pink
+	);
+	//Social Colours
+$soc-colours: (
+	github : $github-primary
 	);
 // Fonts
 	// Urls

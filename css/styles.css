@@ -42,6 +42,36 @@ h2 {
   font-size: 1.5em;
 }
 
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?jkj86b");
+  src: url("../fonts/icomoon.eot?jkj86b#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?jkj86b") format("truetype"), url("../fonts/icomoon.woff?jkj86b") format("woff"), url("../fonts/icomoon.svg?jkj86b#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-circle-right:before {
+  content: "\ea42";
+}
+
+.icon-github:before {
+  content: "\eab0";
+}
+
 .netmatters-card {
   background-color: white;
   border-radius: 10px;
@@ -54,17 +84,35 @@ h2 {
   padding-bottom: 10px;
 }
 
+.netmatters-card:hover {
+  background-color: #9B4F96;
+  animation: hover-scale 1s ease-in-out 0s 1 normal forwards;
+  z-index: 5;
+}
+.netmatters-card:hover * {
+  color: white;
+}
+.netmatters-card:hover a {
+  background-color: white;
+  color: #9B4F96;
+}
+.netmatters-card:hover a * {
+  color: #9B4F96;
+}
+
 .netmatters-card-image {
   background-image: url("../images/projects/netmatters-proj.png");
 }
 
 .netmatters-card-title {
   color: #9B4F96;
-  font-size: 22px;
+  font-size: 24px;
+  width: 100%;
   padding-bottom: 5px;
   text-align: center;
   padding-left: 5px;
   padding-right: 5px;
+  line-height: 24px;
 }
 
 .netmatters-card-blurb {
@@ -84,6 +132,11 @@ h2 {
   padding: 10px;
   max-height: 100%;
   max-width: 100%;
+  font-size: 18px;
+}
+.netmatters-card-button :first-child {
+  font-size: 13px;
+  padding: 3px;
 }
 
 .placeholder-card {
@@ -98,17 +151,35 @@ h2 {
   padding-bottom: 10px;
 }
 
+.placeholder-card:hover {
+  background-color: #D60270;
+  animation: hover-scale 1s ease-in-out 0s 1 normal forwards;
+  z-index: 5;
+}
+.placeholder-card:hover * {
+  color: white;
+}
+.placeholder-card:hover a {
+  background-color: white;
+  color: #D60270;
+}
+.placeholder-card:hover a * {
+  color: #D60270;
+}
+
 .placeholder-card-image {
   background-image: url("../images/projects/placeholder-proj.png");
 }
 
 .placeholder-card-title {
   color: #D60270;
-  font-size: 22px;
+  font-size: 24px;
+  width: 100%;
   padding-bottom: 5px;
   text-align: center;
   padding-left: 5px;
   padding-right: 5px;
+  line-height: 24px;
 }
 
 .placeholder-card-blurb {
@@ -128,8 +199,38 @@ h2 {
   padding: 10px;
   max-height: 100%;
   max-width: 100%;
+  font-size: 18px;
+}
+.placeholder-card-button :first-child {
+  font-size: 13px;
+  padding: 3px;
 }
 
+.github-social {
+  background-color: black;
+  color: #4078c0;
+  border-radius: 10px;
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+  padding: 5px 5px 0px 5px;
+  width: 60px;
+  height: 60px;
+}
+
+.github-social:hover {
+  background-color: #4078c0;
+  color: black;
+}
+
+@keyframes hover-scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
 ul {
   list-style-type: none;
 }
@@ -282,18 +383,28 @@ img {
   height: calc(100% - 10px);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   border: 5px solid purple;
   background-color: black;
   border-radius: 0px 5px 0px 5px;
   color: white;
+  gap: -2px;
+  z-index: 2;
 }
 .navbar h1 {
   color: white;
 }
+.navbar h2 {
+  color: white;
+  line-height: 5px;
+}
 .navbar .nav-link {
   text-decoration: none;
   color: white;
+}
+.navbar .nav-link:hover {
+  text-decoration: underline;
+  font-style: italic;
 }
 
 .bio {
@@ -337,6 +448,14 @@ img {
   background-repeat: no-repeat;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+.socials-container {
+  display: flex;
+  flex-direction: row;
+}
+.socials-container a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -3,13 +3,18 @@
 ## TO DO:
 
 - **Add pages**
-	- About Me
+	- ~~About Me~~
 	- ~~Code Examples~~
-	- SCS Scheme
-- **Add art**
-- **Connect links**
+	- ~~SCS Scheme~~
+- **Add content to pages**
 	- About Me
 	- ~~Code Examples~~
 	- ~~SCS Scheme~~
-- **Styling passes**
+- **Connect links**
+	- ~~About Me~~
+	- ~~Code Examples~~
+	- ~~SCS Scheme~~
+	- ~~Logo~~
+	- ~~Social~~
+- **Styling pass**
 - **Peer testing**

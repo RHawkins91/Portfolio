@@ -1,10 +1,6 @@
 // Imports
-@import "_partials/_variables.scss", "_partials/_config.scss", "_partials/_mixins.scss", "_partials/_utils.scss";
+@import "_partials/_variables", "_partials/_config", "_partials/_layout", "_partials/_mixins", "_partials/_utils";
 
-// Styling
-ul {
-	list-style-type: none;
-}
 html {
 	//height: 150%;
 	// background-image: linear-gradient(to bottom, #D70071, #0035AA);
@@ -60,29 +56,7 @@ img {
 .content {
 	flex: 2;
 }
-.nameplate {
-	height: 100vh;
-	// margin: 10% 0 10% 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	h1 {
-		background: linear-gradient(180deg, rgba(155,79,150,1) 0%, rgba(214,2,112,1) 45%, rgba(0,56,168,1) 85%);
-		background-size: 100%;
-		background-clip: text;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent; 
-		-moz-background-clip: text;
-		-moz-text-fill-color: transparent;
-		font-size: 72px;
-		//anim
-		background-size: 1000% 1000%;
-		-webkit-animation: txt-gradient-anim 10s ease infinite;
-	    -moz-animation: txt-gradient-anim 10s ease infinite;
-	    -o-animation: txt-gradient-anim 10s ease infinite;
-	    animation: txt-gradient-anim 10s ease infinite;
-	}
-}
+
 //Text anim KF
  @-webkit-keyframes txt-gradient-anim {
     0%{background-position:55% 0%}
@@ -104,178 +78,7 @@ img {
     50%{background-position:46% 100%}
     100%{background-position:55% 0%}
 }
-.navbar {
-	padding-right: 5px;
-	flex: 200px 0 0;
-    position: fixed;
-	top: 0;
-	left: 0;
-	height: calc(100% - 10px);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	border: 5px solid purple;
-	background-color: black;
-	border-radius: 0px 5px 0px 5px;
-	color: white;
-	gap: -2px;
-	z-index: 2;
-	h1{
-		color: white;
-	}
-	h2 {
-		color: white;
-		line-height: 5px;
-	}
-	.nav-link {
-		text-decoration: none;
-		color: white;
-	}
-	.nav-link:hover {
-		text-decoration: underline;
-		font-style: italic;
-	}
-}
+
 .bio {
 	display: grid;
-}
-.logo {
-	margin-top: 20px;
-	font-size: 45px;
-	text-decoration: none;
-	background-color: $flag-purple;
-	border: 5px solid $flag-purple;
-	border-radius: 90px;
-	text-align: center;
-	align-self: center;
-	width: 90px;
-	color: $flag-black;
-}
-.project-cards, .card-container {
-	flex: 2;
-	display: grid;
-	grid-template-columns: 30% 30% 30%;
-	grid-template-rows: 50% 50%;
-	padding-left: 200px;
-	grid-gap: 20px;
-}
-.project-card, .card {
-	display: grid;
-	grid-template-columns: 100%;
-	grid-template-rows: 60% 15% 15% 10%;
-	grid-row-gap: 0px;
-	background-color: white;
-	border-radius: 10px;
-	-webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
-	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
-	min-height: 450px;
-	min-width: 340px;
-	line-height: 18px;
-	padding-bottom: 10px;
-}
-.card-image {
-	width: 100%;
-	height: 100%;
-	display: block;
-	background-size: cover;
-	background-repeat: no-repeat;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-}
-.card-title {
-	font-size: 24px;
-	width: 100%;
-	padding-bottom: 5px;
-	text-align: center;
-	padding-left: 5px;
-	padding-right: 5px;
-	line-height: 24px;
-}
-.card-button {
-	background-color: blue;
-	border-radius: 10px;
-	color: white;
-	text-align: center;
-	margin: auto;
-	padding: 10px;
-	max-height: 100%;
-	max-width: 100%;
-	font-size: 18px;
-	:first-child {
-		font-size: 13px;
-		padding: 3px;
-	}
-}
-.socials-container {
-	display: flex;
-	flex-direction: row;
-	//justify-content: center;
-	a {
-		text-decoration: none;
-	}
-}
-.contact-form-container {
-	flex: 2;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	// padding-top: 20px;
-	padding-bottom: 10px;
-	margin-top: 10px;
-	margin-left: 200px;
-	margin-right: 70px;
-	border-radius: 20px;
-	border: 5px solid $purple;
-	-webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
-	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
-	// padding-left: 10px;
-	background-color: $purple;
-	// background-blend-mode: lighten;
-	align-items: center;
-	.contact-form {
-		display: grid;
-		grid-template-columns: 100%;
-		grid-gap: 10px;
-		// justify-items: center;
-		.form-dropdown {
-			display: grid;
-			grid-template-columns: 100%;
-			justify-items: center;
-		}
-		.form-names {
-			display: grid;
-			grid-template-columns: 50% 50%;
-			grid-gap: 10px;
-			justify-items: center;
-		}
-		.form-email-inputs {
-			display: grid;
-			grid-template-columns: 50% 50%;
-			grid-gap: 10px;
-			justify-items: center;
-			input {
-				height: 32px;
-			}
-		}
-		.contact-email-message {
-			display: grid;
-			grid-template-columns: 100%;
-			justify-items: center;
-			textarea {
-				min-width: 100%;
-				margin-left: 10px;
-			}
-		}
-		.form-buttons {
-			display: grid;
-			grid-template-columns: 45% 45%;
-			justify-items: center;
-			input {
-				width: 150px;
-				border-radius: 3px;
-			}
-		}
-	}
 }

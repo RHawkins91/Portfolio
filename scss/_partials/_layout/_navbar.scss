@@ -1,0 +1,52 @@
+.navbar {
+	padding-right: 5px;
+	flex: 200px 0 0;
+    position: fixed;
+	top: 0;
+	left: 0;
+	height: calc(100% - 10px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 5px solid purple;
+	background-color: black;
+	border-radius: 0px 5px 0px 5px;
+	color: white;
+	gap: -2px;
+	z-index: 2;
+	h1{
+		color: white;
+	}
+	h2 {
+		color: white;
+		line-height: 5px;
+	}
+	.nav-link {
+		text-decoration: none;
+		color: white;
+	}
+	.nav-link:hover {
+		text-decoration: underline;
+		font-style: italic;
+	}
+}
+.logo {
+	margin-top: 20px;
+	font-size: 45px;
+	text-decoration: none;
+	background-color: $flag-purple;
+	border: 5px solid $flag-purple;
+	border-radius: 90px;
+	text-align: center;
+	align-self: center;
+	width: 90px;
+	color: $flag-black;
+}
+.socials-container {
+	display: flex;
+	flex-direction: row;
+	//justify-content: center;
+	a {
+		text-decoration: none;
+	}
+}

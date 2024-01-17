@@ -42,6 +42,10 @@ h2 {
   font-size: 1.5em;
 }
 
+a {
+  text-decoration: none;
+}
+
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon.eot?jkj86b");
@@ -117,6 +121,7 @@ ul {
 }
 @media (min-width: 993px) {
   .contact-form-container {
+    flex: 2;
     margin-left: 200px;
     margin-right: 70px;
   }
@@ -236,8 +241,9 @@ ul {
   flex: 2;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 500px;
   grid-gap: 20px;
+  max-width: 90%;
+  margin: auto;
 }
 @media (min-width: 993px) {
   .card-container {
@@ -262,16 +268,9 @@ ul {
   line-height: 18px;
   padding-bottom: 10px;
   justify-content: center;
-  width: 356px;
+  width: 100%;
   min-height: 450px;
 }
-@media (min-width: 993px) {
-  .card {
-    min-height: 450px;
-    min-width: 340px;
-  }
-}
-
 .card-image {
   width: 100%;
   height: 100%;
@@ -310,6 +309,7 @@ ul {
 
 .card-blurb {
   text-align: center;
+  min-height: max-content;
 }
 
 .netmatters-card {
@@ -435,36 +435,42 @@ ul {
 }
 
 .nm-card {
-  grid-template-rows: 60% 15% 15% 10%;
-  min-height: max-content;
-  max-height: 100vh;
+  grid-template-rows: 30% 10% 50% 10%;
+}
+.nm-card p {
+  padding-top: 5px;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .nm-card-image {
   background-image: url("../images/logos/nm-logo.png");
-  height: 100%;
 }
 
 .treehouse-card {
-  grid-template-rows: 60% 15% 15% 10%;
-  min-height: max-content;
-  max-height: 100vh;
+  grid-template-rows: 30% 10% 50% 10%;
+}
+.treehouse-card p {
+  padding-top: 5px;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .treehouse-card-image {
   background-image: url("../images/logos/treehouse-logo.png");
-  height: 100%;
 }
 
 .scion-card {
-  grid-template-rows: 60% 15% 15% 10%;
-  min-height: max-content;
-  max-height: 100vh;
+  grid-template-rows: 30% 10% 50% 10%;
+}
+.scion-card p {
+  padding-top: 5px;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .scion-card-image {
   background-image: url("../images/logos/scion-logo.png");
-  height: 100%;
 }
 
 .github-social {
@@ -548,10 +554,6 @@ html {
     background-position: 55% 0%;
   }
 }
-body {
-  overflow-x: hidden;
-}
-
 img {
   border: 2px #9B4F96 solid;
   border-top-left-radius: 10px;
@@ -565,7 +567,6 @@ img {
 .container {
   display: flex;
   flex-wrap: wrap;
-  overflow-x: hidden;
 }
 
 .content {

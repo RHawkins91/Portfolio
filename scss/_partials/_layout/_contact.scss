@@ -4,7 +4,6 @@
 	flex-direction: column;
 	flex-wrap: nowrap;
 	padding-bottom: 10px;
-	margin-top: 10px;
 	border-radius: 20px;
 	border: 5px solid $purple;
 	-webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
@@ -12,18 +11,27 @@
 	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
 	background-color: $purple;
 	align-items: center;
-	width: 356px;
+	max-width: 95%;
+	margin: auto;
+	margin-top: 10px;
+	@include mq("tablet"){
+		max-width: 90%;
+		margin-left: 40px;
+	}
 	@include mq("landscape"){
 		flex: 2;
-		margin-left: 200px;
-		margin-right: 70px;
-		width: calc(100% - 277px);
+		// margin-left: 270px;
+		// margin-right: 70px;
+		// width: calc(100% - 347px);
+		margin: auto;
+		margin-left: 270px;
+		margin-top: 10px;
+		max-width: 70%;
 	}
 	.contact-form {
 		display: grid;
 		grid-template-columns: 100%;
 		grid-gap: 10px;
-		// justify-items: center;
 		.form-dropdown {
 			display: grid;
 			grid-template-columns: 100%;
@@ -38,7 +46,7 @@
 			grid-gap: 10px;
 			grid-template-columns: 100%;
 			justify-items: center;
-			@include mq("landscape"){
+			@include mq("tablet"){
 				grid-template-columns: 50% 50%;
 			}
 		}
@@ -47,7 +55,7 @@
 			grid-template-columns: 100%;
 			grid-gap: 10px;
 			justify-items: center;
-			@include mq("landscape"){
+			@include mq("tablet"){
 				grid-template-columns: 50% 50%;
 			}
 			input {
@@ -60,9 +68,9 @@
 			justify-items: center;
 			textarea {
 				width: 252px;
-				@include mq("landscape") {
+				@include mq("tablet") {
 					width: 100%;
-					margin-left: 14px;
+					margin: auto;
 				}
 			}
 		}

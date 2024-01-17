@@ -7,6 +7,7 @@
 	.#{$project}-card {
 		grid-template-rows: 60% 15% 15% 10%;
 		background-color: white;
+		color: white;
 	}
 	.#{$project}-card:hover {
 		@include mq("landscape"){

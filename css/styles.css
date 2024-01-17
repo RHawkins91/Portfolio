@@ -85,6 +85,12 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
+}
+@media (min-width: 993px) {
+  .nameplate {
+    margin-left: 270px;
+  }
 }
 .nameplate h1 {
   background: linear-gradient(180deg, rgb(155, 79, 150) 0%, rgb(214, 2, 112) 45%, rgb(0, 56, 168) 85%);
@@ -109,7 +115,6 @@ ul {
   flex-direction: column;
   flex-wrap: nowrap;
   padding-bottom: 10px;
-  margin-top: 10px;
   border-radius: 20px;
   border: 5px solid #9B4F96;
   -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
@@ -117,14 +122,23 @@ ul {
   box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
   background-color: #9B4F96;
   align-items: center;
-  width: 356px;
+  max-width: 95%;
+  margin: auto;
+  margin-top: 10px;
+}
+@media (min-width: 769px) {
+  .contact-form-container {
+    max-width: 90%;
+    margin-left: 40px;
+  }
 }
 @media (min-width: 993px) {
   .contact-form-container {
     flex: 2;
-    margin-left: 200px;
-    margin-right: 70px;
-    width: calc(100% - 277px);
+    margin: auto;
+    margin-left: 270px;
+    margin-top: 10px;
+    max-width: 70%;
   }
 }
 .contact-form-container .contact-form {
@@ -147,7 +161,7 @@ ul {
   grid-template-columns: 100%;
   justify-items: center;
 }
-@media (min-width: 993px) {
+@media (min-width: 769px) {
   .contact-form-container .contact-form .form-names {
     grid-template-columns: 50% 50%;
   }
@@ -158,7 +172,7 @@ ul {
   grid-gap: 10px;
   justify-items: center;
 }
-@media (min-width: 993px) {
+@media (min-width: 769px) {
   .contact-form-container .contact-form .form-email-inputs {
     grid-template-columns: 50% 50%;
   }
@@ -174,10 +188,10 @@ ul {
 .contact-form-container .contact-form .contact-email-message textarea {
   width: 252px;
 }
-@media (min-width: 993px) {
+@media (min-width: 769px) {
   .contact-form-container .contact-form .contact-email-message textarea {
     width: 100%;
-    margin-left: 14px;
+    margin: auto;
   }
 }
 .contact-form-container .contact-form .form-buttons {
@@ -192,6 +206,7 @@ ul {
 }
 
 .navbar {
+  width: 250px;
   display: none;
   padding-right: 5px;
   flex: 200px 0 0;
@@ -200,13 +215,11 @@ ul {
   left: 0;
   height: calc(100% - 10px);
   flex-direction: column;
-  align-items: center;
   border: 5px solid purple;
   background-color: black;
   border-radius: 0px 5px 0px 5px;
   color: white;
   gap: -2px;
-  z-index: 2;
 }
 @media (min-width: 993px) {
   .navbar {
@@ -215,18 +228,20 @@ ul {
 }
 .navbar h1 {
   color: white;
+  align-self: center;
 }
 .navbar h2 {
   color: white;
   line-height: 5px;
+  align-self: center;
 }
 .navbar .nav-link {
   text-decoration: none;
   color: white;
 }
 .navbar .nav-link:hover {
-  text-decoration: underline;
-  font-style: italic;
+  font-weight: bold;
+  color: #9B4F96;
 }
 .navbar .logo {
   margin-top: 20px;
@@ -253,15 +268,23 @@ ul {
   display: grid;
   grid-template-columns: 100%;
   grid-gap: 20px;
-  max-width: 90%;
+  max-width: 95%;
   margin: auto;
+}
+@media (min-width: 769px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 90%;
+    grid-gap: 10px;
+  }
 }
 @media (min-width: 993px) {
   .card-container {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 50% 50%;
-    padding-left: 200px;
+    padding-left: 270px;
     grid-gap: 20px;
   }
 }
@@ -326,6 +349,7 @@ ul {
 .netmatters-card {
   grid-template-rows: 60% 15% 15% 10%;
   background-color: white;
+  color: white;
 }
 
 @media (min-width: 993px) {
@@ -388,6 +412,7 @@ ul {
 .placeholder-card {
   grid-template-rows: 60% 15% 15% 10%;
   background-color: white;
+  color: white;
 }
 
 @media (min-width: 993px) {
@@ -514,6 +539,7 @@ ul {
 html {
   width: 100vw;
   background-repeat: no-repeat;
+  overflow-x: hidden;
   background: rgb(254, 244, 47);
   background: linear-gradient(180deg, rgb(254, 244, 47) 0%, rgb(255, 255, 255) 35%, rgb(155, 89, 208) 59%, rgb(0, 0, 0) 100%);
   background-size: 100% 100%;
@@ -580,6 +606,7 @@ img {
 .container {
   display: flex;
   flex-wrap: wrap;
+  overflow-x: hidden;
 }
 
 .content {

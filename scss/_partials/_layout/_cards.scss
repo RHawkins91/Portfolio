@@ -6,13 +6,22 @@
 	grid-template-columns: 100%;
 	// grid-template-rows: 500px;
 	grid-gap: 20px;
-	max-width: 90%;
+	max-width: 95%;
 	margin: auto;
+	@include mq("tablet"){
+		display: grid;
+		grid-template-columns: 50% 50%;
+		// grid-template-rows: 50% 30%;
+		// padding-left: 270px;
+		max-width: 90%;
+		grid-gap: 10px;
+		// margin: auto;
+	}
 	@include mq("landscape"){
 		display: grid;
 		grid-template-columns: 30% 30% 30%;
 		grid-template-rows: 50% 50%;
-		padding-left: 200px;
+		padding-left: 270px;
 		grid-gap: 20px;
 	}
 }

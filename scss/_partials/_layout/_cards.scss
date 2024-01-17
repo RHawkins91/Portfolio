@@ -19,10 +19,14 @@
 	}
 	@include mq("landscape"){
 		display: grid;
-		grid-template-columns: 30% 30% 30%;
-		grid-template-rows: 50% 50%;
+		grid-template-columns: 49% 49%;
+		// grid-template-rows: 50% 50%;
 		padding-left: 270px;
-		grid-gap: 20px;
+		grid-gap: 10px;
+		max-width: 90%;
+	}
+	@include mq("desktop"){
+		grid-template-columns: 32% 32% 32%;
 	}
 }
 .card {
@@ -42,7 +46,8 @@
 	min-height: 450px;
 	@include mq("landscape"){
 		// min-height: 450px;
-		// min-width: 340px;
+		max-width: 100%;
+		// margin: auto;
 	}
 }
 .card-image {

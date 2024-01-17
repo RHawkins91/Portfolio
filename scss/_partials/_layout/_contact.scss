@@ -26,7 +26,10 @@
 		margin: auto;
 		margin-left: 270px;
 		margin-top: 10px;
-		max-width: 70%;
+		max-width: 73%;
+	}
+	@include mq("desktop"){
+		max-width: 77.5%
 	}
 	.contact-form {
 		display: grid;

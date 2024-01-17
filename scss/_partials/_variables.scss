@@ -16,16 +16,22 @@ $flag-purple : #9B59D0;
 $flag-black  : #000000;
 //Breakpoints
 
-$mobile : 576px;
-$tablet : 768px;
-$landscape : 992px;
-$desktop : 1080px;
+$brk-sm : 576px;
+$brk-med : 768px;
+$brk-lrg : 992px;
+$brk-xl : 1080px;
 
 // Dictionaries
 	//Project card colours
 $proj-colours: (
 	netmatters  : $purple,
 	placeholder : $pink
+	);
+	//SCS card colours
+$scs-colours: (
+	nm : #323544,
+	treehouse : #5FCF80,
+	scion : #CE4125
 	);
 	//Social Colours
 $soc-colours: (

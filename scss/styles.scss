@@ -1,11 +1,12 @@
 // Imports
-@import "_partials/_variables", "_partials/_config", "_partials/_layout", "_partials/_mixins", "_partials/_utils";
+@import "_partials/_variables", "_partials/_config", "_partials/_mixins", "_partials/_layout", "_partials/_utils";
 
 html {
-	//height: 150%;
+	//height: 180%;
 	// background-image: linear-gradient(to bottom, #D70071, #0035AA);
+	width: 100vw;
 	background-repeat: no-repeat;
-	//overflow-y: hidden;
+	//overflow-x: hidden;
 	background: rgb(254,244,47);
 	background: linear-gradient(180deg, rgba(254,244,47,1) 0%, rgba(255,255,255,1) 35%, rgba(155,89,208,1) 59%, rgba(0,0,0,1) 100%);
 	background-size: 100% 100%;
@@ -13,6 +14,7 @@ html {
 	-moz-animation: bg-gradient-anim 30s ease infinite;
 	-o-animation: bg-gradient-anim 30s ease infinite;
 	animation: bg-gradient-anim 30s ease infinite; 
+
 }
 //BG-Anim
  @-webkit-keyframes bg-gradient-anim {
@@ -38,6 +40,7 @@ html {
 body {
 	// height: 110%;
 	// display: flex;
+	overflow-x: hidden;
 	
 }
 img {
@@ -52,6 +55,7 @@ img {
 .container {
 	display: flex;
 	flex-wrap: wrap;
+	overflow-x: hidden;
 }
 .content {
 	flex: 2;

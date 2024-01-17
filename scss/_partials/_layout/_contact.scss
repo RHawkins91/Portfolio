@@ -3,20 +3,20 @@
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	// padding-top: 20px;
 	padding-bottom: 10px;
 	margin-top: 10px;
-	margin-left: 200px;
-	margin-right: 70px;
 	border-radius: 20px;
 	border: 5px solid $purple;
 	-webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
 	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
-	// padding-left: 10px;
 	background-color: $purple;
-	// background-blend-mode: lighten;
 	align-items: center;
+	width: 356px;
+	@include mq("landscape"){
+		margin-left: 200px;
+		margin-right: 70px;
+	}
 	.contact-form {
 		display: grid;
 		grid-template-columns: 100%;
@@ -29,15 +29,21 @@
 		}
 		.form-names {
 			display: grid;
-			grid-template-columns: 50% 50%;
 			grid-gap: 10px;
+			grid-template-columns: 100%;
 			justify-items: center;
+			@include mq("landscape"){
+				grid-template-columns: 50% 50%;
+			}
 		}
 		.form-email-inputs {
 			display: grid;
-			grid-template-columns: 50% 50%;
+			grid-template-columns: 100%;
 			grid-gap: 10px;
 			justify-items: center;
+			@include mq("landscape"){
+				grid-template-columns: 50% 50%;
+			}
 			input {
 				height: 32px;
 			}
@@ -47,14 +53,16 @@
 			grid-template-columns: 100%;
 			justify-items: center;
 			textarea {
-				min-width: 100%;
-				margin-left: 10px;
+				width: 252px;
+				// min-width: 100%;
+				// margin-left: 10px;
 			}
 		}
 		.form-buttons {
 			display: grid;
 			grid-template-columns: 45% 45%;
 			justify-items: center;
+			grid-gap: 20px;
 			input {
 				width: 150px;
 				border-radius: 3px;

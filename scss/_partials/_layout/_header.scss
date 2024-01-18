@@ -10,33 +10,33 @@
 	}
 	h2 {
 		background: linear-gradient(180deg, rgba(155,79,150,1) 0%, rgba(214,2,112,1) 45%, rgba(0,56,168,1) 85%);
-		// background-size: 100%;
 		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent; 
 		-moz-background-clip: text;
 		-moz-text-fill-color: transparent;
 		font-size: 32px;;
+		text-align: center;
 		//anim
 		background-size: 1000% 1000%;
 		-webkit-animation: txt-gradient-anim 10s ease infinite;
 	    -moz-animation: txt-gradient-anim 10s ease infinite;
 	    -o-animation: txt-gradient-anim 10s ease infinite;
 	    animation: txt-gradient-anim 10s ease infinite;
-	    text-align: center;
-	    // text-shadow: 10px 10px 10px;
+
 	}
 	h1 {
-		background: linear-gradient(90deg, $flag-yellow, $flag-white, $flag-purple, $flag-black);
-    	background-size: 1000% 1000%;
-    	background-clip: text;
-    	-webkit-background-clip: text;
+		background: linear-gradient(180deg, rgba(155,79,150,1) 0%, rgba(214,2,112,1) 45%, rgba(0,56,168,1) 85%);
+		background-clip: text;
+		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent; 
 		-moz-background-clip: text;
 		-moz-text-fill-color: transparent;
-		-webkit-animation: enby-gradient 5s ease infinite;
-		-moz-animation: enby-gradient 5s ease infinite;
-		animation: enby-gradient 5s ease infinite;
+		background-size: 1000% 1000%;
+		-webkit-animation: txt-gradient-anim 10s ease infinite;
+		-moz-animation: txt-gradient-anim 10s ease infinite;
+		-o-animation: txt-gradient-anim 10s ease infinite;
+		animation: txt-gradient-anim 10s ease infinite;
 		font-size: 102px;
 		text-align: center;
 	}

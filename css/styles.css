@@ -48,8 +48,8 @@ a {
 
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?jkj86b");
-  src: url("../fonts/icomoon.eot?jkj86b#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?jkj86b") format("truetype"), url("../fonts/icomoon.woff?jkj86b") format("woff"), url("../fonts/icomoon.svg?jkj86b#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?mebtrg");
+  src: url("../fonts/icomoon.eot?mebtrg#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?mebtrg") format("truetype"), url("../fonts/icomoon.woff?mebtrg") format("woff"), url("../fonts/icomoon.svg?mebtrg#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -76,6 +76,10 @@ a {
   content: "\eab0";
 }
 
+.icon-menu:before {
+  content: "\e9bd";
+}
+
 ul {
   list-style-type: none;
 }
@@ -92,20 +96,33 @@ ul {
     margin-left: 250px;
   }
 }
-.nameplate h1 {
+.nameplate h2 {
   background: linear-gradient(180deg, rgb(155, 79, 150) 0%, rgb(214, 2, 112) 45%, rgb(0, 56, 168) 85%);
-  background-size: 100%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  font-size: 72px;
+  font-size: 32px;
   background-size: 1000% 1000%;
   -webkit-animation: txt-gradient-anim 10s ease infinite;
   -moz-animation: txt-gradient-anim 10s ease infinite;
   -o-animation: txt-gradient-anim 10s ease infinite;
   animation: txt-gradient-anim 10s ease infinite;
+  text-align: center;
+}
+.nameplate h1 {
+  background: linear-gradient(90deg, #FEF42F, #FFFFFF, #9B59D0, #000000);
+  background-size: 1000% 1000%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-animation: enby-gradient 5s ease infinite;
+  -moz-animation: enby-gradient 5s ease infinite;
+  animation: enby-gradient 5s ease infinite;
+  font-size: 102px;
   text-align: center;
 }
 
@@ -320,6 +337,9 @@ ul {
 }
 .navbar .socials-container a {
   text-decoration: none;
+}
+.navbar .burger-button {
+  display: none;
 }
 
 .card-container {
@@ -795,6 +815,39 @@ img {
   }
   100% {
     background-position: 55% 0%;
+  }
+}
+@-webkit-keyframes enby-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes enby-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes enby-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 .bio {

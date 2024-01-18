@@ -503,6 +503,8 @@ ul {
 
 .netmatters-card-image {
   background-image: url("../images/projects/netmatters-proj.png");
+  background-size: cover;
+  height: 100%;
 }
 
 .netmatters-card-title {
@@ -566,6 +568,8 @@ ul {
 
 .placeholder-card-image {
   background-image: url("../images/projects/placeholder-proj.png");
+  background-size: cover;
+  height: 100%;
 }
 
 .placeholder-card-title {
@@ -634,8 +638,6 @@ ul {
 
 .nm-card-image {
   background-image: url("../images/logos/nm-logo.png");
-  background-size: cover;
-  height: 100%;
 }
 
 .treehouse-card {
@@ -669,8 +671,6 @@ ul {
 
 .treehouse-card-image {
   background-image: url("../images/logos/treehouse-logo.png");
-  background-size: cover;
-  height: 100%;
 }
 
 .scion-card {
@@ -704,8 +704,6 @@ ul {
 
 .scion-card-image {
   background-image: url("../images/logos/scion-logo.png");
-  background-size: cover;
-  height: 100%;
 }
 
 .github-social {

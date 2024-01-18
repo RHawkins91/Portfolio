@@ -28,6 +28,8 @@
 	}
 	.#{$project}-card-image {
 		background-image: url('../images/projects/#{$project}-proj.png');
+		background-size: cover;
+		height: 100%;
 	}
 	.#{$project}-card-title {
 		color: $colour;
@@ -98,8 +100,8 @@
 		}
 	.#{$site}-card-image {
 		background-image: url("../images/logos/#{$site}-logo.png");
-		background-size: cover;
-		height: 100%;
+		//background-size: cover;
+		//height: 100%;
 	}
 }
 

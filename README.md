@@ -26,5 +26,6 @@ https://rhawkins91.github.io/Portfolio/
 	- ~~First~~
 	- ~~Final~~
 - ~~**Peer testing**~~
+<<<<<<< HEAD
 	- ~~Fix Issues~~
 - ~~**Upload to cPanel**~~

@@ -96,9 +96,11 @@ img {
 	align-items: center;
 	width: 356px;
 	@include mq("landscape"){
-		margin-left: 200px;
-		margin-right: 70px;
-		width: calc(100% - 277px);
+		margin: auto;
+		margin-left: 270px;
+		// margin-right: 70px;
+		// width: calc(100% - 277px);
+		width: 79%;
 	}
 	p {
 		border-radius: 20px;

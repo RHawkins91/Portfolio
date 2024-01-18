@@ -220,11 +220,12 @@ ul {
   left: 0;
   height: calc(100% - 10px);
   flex-direction: column;
+  justify-content: flex-start;
   border: 5px solid purple;
   background-color: black;
   border-radius: 0px 5px 0px 5px;
   color: white;
-  gap: -2px;
+  gap: -5px;
 }
 @media (min-width: 993px) {
   .navbar {
@@ -237,8 +238,11 @@ ul {
 }
 .navbar h2 {
   color: white;
-  line-height: 5px;
+  line-height: 1px;
   align-self: center;
+}
+.navbar ul {
+  line-height: 22px;
 }
 .navbar .nav-link {
   text-decoration: none;
@@ -689,9 +693,9 @@ img {
 }
 @media (min-width: 993px) {
   .blurb-container {
-    margin-left: 200px;
-    margin-right: 70px;
-    width: calc(100% - 277px);
+    margin: auto;
+    margin-left: 270px;
+    width: 79%;
   }
 }
 .blurb-container p {

@@ -12,6 +12,7 @@
 	- ~~SCS Scheme~~
 - ~~**Connect links**~~
 	- ~~About Me~~
+ 	- ~~My Portfolio~~ 
 	- ~~Code Examples~~
 	- ~~SCS Scheme~~
 	- ~~Logo~~

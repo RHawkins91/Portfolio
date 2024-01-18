@@ -250,7 +250,19 @@ ul {
 }
 .navbar .nav-link:hover {
   font-weight: bold;
-  color: #9B4F96;
+  background: linear-gradient(180deg, rgb(155, 79, 150) 0%, rgb(214, 2, 112) 45%, rgb(0, 56, 168) 85%);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  background-size: 1000% 1000%;
+  -webkit-animation: txt-gradient-anim 4s ease-in-out infinite;
+  -moz-animation: txt-gradient-anim 4s ease-in-out infinite;
+  -o-animation: txt-gradient-anim 4s ease-in-out infinite;
+  animation: txt-gradient-anim 4s ease infinite;
+  text-align: center;
 }
 .navbar .logo {
   margin-top: 20px;

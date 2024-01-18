@@ -39,7 +39,21 @@
 	.nav-link:hover {
 		// text-decoration: underline;
 		font-weight: bold;
-		color: $purple;
+		// color: $purple;
+		background: linear-gradient(180deg, rgba(155,79,150,1) 0%, rgba(214,2,112,1) 45%, rgba(0,56,168,1) 85%);
+		background-size: 100%;
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent; 
+		-moz-background-clip: text;
+		-moz-text-fill-color: transparent;
+		//anim
+		background-size: 1000% 1000%;
+		-webkit-animation: txt-gradient-anim 4s ease-in-out infinite;
+		-moz-animation: txt-gradient-anim 4s ease-in-out infinite;
+		-o-animation: txt-gradient-anim 4s ease-in-out infinite;
+		animation: txt-gradient-anim 4s ease infinite;
+		text-align: center;
 	}
 	.logo {
 		margin-top: 20px;

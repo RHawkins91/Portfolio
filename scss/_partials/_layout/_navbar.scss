@@ -10,9 +10,10 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	// align-items: center;
-	border: 5px solid purple;
-	background-color: black;
+	border: 5px solid $purple;
+	background-color: $black;
 	border-radius: 0px 5px 0px 5px;
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5), inset 0 0 10px black;
 	color: white;
 	gap: -5px;
 	// flex-basis: 50px;

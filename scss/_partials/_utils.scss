@@ -82,7 +82,7 @@
 //Socials
 @each $social, $colour in $soc-colours {
 	.#{$social}-social {
-		background-color: black;
+		background-color: $black;
 		color: $colour;
 		border-radius: 10px;
 		font-size: 35px;

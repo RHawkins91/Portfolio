@@ -118,6 +118,8 @@ img {
 .copyright-notice {
 	color: white;
 	padding-top: 20px;
-	margin-left: 250px;
 	text-align: center;
+	@include mq("landscape"){
+		margin-left: 250px;
+	}
 }

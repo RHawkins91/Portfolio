@@ -838,8 +838,12 @@ img {
 .copyright-notice {
   color: white;
   padding-top: 20px;
-  margin-left: 250px;
   text-align: center;
+}
+@media (min-width: 993px) {
+  .copyright-notice {
+    margin-left: 250px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

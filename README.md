@@ -1,5 +1,9 @@
 # Readme
 
+## Live Site
+
+https://rhawkins91.github.io/Portfolio/
+
 ## TO DO:
 
 - ~~**Add pages**~~
@@ -20,7 +24,6 @@
 	- ~~External~~
 - **Styling passes**
 	- ~~First~~
-	- Final
-- **Peer testing**
-	- First round
-	- Second round
+	- ~~Final~~
+- ~~**Peer testing**~~
+-~~**Upload to cPanel~~

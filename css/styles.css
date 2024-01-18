@@ -88,13 +88,20 @@ ul {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: auto;
+  justify-content: center;
+  width: calc(100vw - 25px);
+  left: 0;
 }
 @media (min-width: 993px) {
   .nameplate {
     margin-left: 250px;
+    width: calc(100vw - 270px);
   }
+}
+.nameplate img {
+  margin: auto;
+  max-height: 200px;
+  max-width: 200px;
 }
 .nameplate h2 {
   background: linear-gradient(180deg, rgb(155, 79, 150) 0%, rgb(214, 2, 112) 45%, rgb(0, 56, 168) 85%);
@@ -103,13 +110,19 @@ ul {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  font-size: 32px;
   text-align: center;
+  font-size: 26px;
+  margin-left: 5px;
   background-size: 1000% 1000%;
   -webkit-animation: txt-gradient-anim 10s ease infinite;
   -moz-animation: txt-gradient-anim 10s ease infinite;
   -o-animation: txt-gradient-anim 10s ease infinite;
   animation: txt-gradient-anim 10s ease infinite;
+}
+@media (min-width: 769px) {
+  .nameplate h2 {
+    font-size: 32px;
+  }
 }
 .nameplate h1 {
   background: linear-gradient(180deg, rgb(155, 79, 150) 0%, rgb(214, 2, 112) 45%, rgb(0, 56, 168) 85%);
@@ -123,8 +136,13 @@ ul {
   -moz-animation: txt-gradient-anim 10s ease infinite;
   -o-animation: txt-gradient-anim 10s ease infinite;
   animation: txt-gradient-anim 10s ease infinite;
-  font-size: 102px;
+  font-size: 50px;
   text-align: center;
+}
+@media (min-width: 769px) {
+  .nameplate h1 {
+    font-size: 102px;
+  }
 }
 
 .contact-form-container {
@@ -133,11 +151,12 @@ ul {
   flex-direction: column;
   flex-wrap: nowrap;
   padding-bottom: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
   border: 5px solid #9B4F96;
   box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5), inset 0 0 10px black;
   background-color: #1a1a1a;
   align-items: center;
+  width: calc(100vw - 25px);
   max-width: 95%;
   margin: auto;
   margin-top: 10px;
@@ -145,27 +164,26 @@ ul {
 }
 .contact-form-container h2 {
   color: white;
-  font-size: 48px;
+  font-size: 44px;
   line-height: 20px;
 }
 @media (min-width: 769px) {
   .contact-form-container {
-    max-width: 90%;
-    margin-left: 40px;
+    width: calc(100% - 25px);
   }
 }
 @media (min-width: 993px) {
   .contact-form-container {
     flex: 2;
+    width: calc(100% - 347px);
     margin: auto;
     margin-left: 270px;
     margin-top: 10px;
-    max-width: 73%;
   }
 }
 @media (min-width: 1200px) {
   .contact-form-container {
-    max-width: 78%;
+    width: calc(100% - 300px);
   }
 }
 .contact-form-container .contact-form {
@@ -180,6 +198,7 @@ ul {
   width: 100%;
 }
 .contact-form-container .contact-form .form-dropdown select {
+  width: 70%;
   text-align: center;
   border-radius: 10px;
   border: 2px solid #9B4F96;
@@ -204,6 +223,12 @@ ul {
   background-color: #1a1a1a;
   box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5), inset 0 0 10px black;
   color: white;
+  width: 70%;
+}
+@media (min-width: 769px) {
+  .contact-form-container .contact-form .form-names input {
+    width: 95%;
+  }
 }
 .contact-form-container .contact-form .form-email-inputs {
   display: grid;
@@ -223,6 +248,12 @@ ul {
   background-color: #1a1a1a;
   box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5), inset 0 0 10px black;
   color: white;
+  width: 70%;
+}
+@media (min-width: 769px) {
+  .contact-form-container .contact-form .form-email-inputs input {
+    width: 95%;
+  }
 }
 .contact-form-container .contact-form .contact-email-message {
   display: grid;
@@ -234,7 +265,7 @@ ul {
   border: 2px solid #9B4F96;
   background-color: #1a1a1a;
   box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5), inset 0 0 10px black;
-  width: 252px;
+  width: 70%;
   color: white;
 }
 @media (min-width: 769px) {
@@ -248,9 +279,10 @@ ul {
   grid-template-columns: 45% 45%;
   justify-items: center;
   grid-gap: 20px;
+  width: 80%;
+  margin: auto;
 }
 .contact-form-container .contact-form .form-buttons input {
-  width: 150px;
   border-radius: 10px;
   border: 2px solid #9B4F96;
   background-color: #1a1a1a;
@@ -348,30 +380,31 @@ ul {
   display: grid;
   grid-template-columns: 100%;
   grid-gap: 20px;
-  max-width: 95%;
+  width: calc(100vw - 20px);
   margin: auto;
 }
 @media (min-width: 769px) {
   .card-container {
     display: grid;
     grid-template-columns: 50% 50%;
-    max-width: 90%;
+    width: calc(100vw - 35px);
     grid-gap: 10px;
   }
 }
 @media (min-width: 993px) {
   .card-container {
     display: grid;
-    grid-template-columns: 49% 49%;
+    grid-template-columns: 45% 45%;
     padding-left: 270px;
     grid-gap: 10px;
-    max-width: 90%;
+    width: calc(100vw - 270px);
     padding-bottom: 80px;
   }
 }
 @media (min-width: 1200px) {
   .card-container {
     grid-template-columns: 32% 32% 32%;
+    width: calc(100vw - 270px);
   }
 }
 
@@ -389,7 +422,7 @@ ul {
   line-height: 18px;
   padding-bottom: 10px;
   justify-content: center;
-  width: 100%;
+  max-width: 100%;
   min-height: 450px;
   box-sizing: border-box;
   color: white;
@@ -400,12 +433,6 @@ ul {
 .card p {
   color: white;
 }
-@media (min-width: 993px) {
-  .card {
-    max-width: 100%;
-  }
-}
-
 .card-image {
   width: 100%;
   height: 100%;
@@ -419,7 +446,7 @@ ul {
 
 .card-title {
   font-size: 24px;
-  width: 100%;
+  width: 95%;
   padding-bottom: 5px;
   text-align: center;
   padding-left: 5px;
@@ -446,6 +473,8 @@ ul {
 .card-blurb {
   text-align: center;
   min-height: max-content;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .netmatters-card {
@@ -605,6 +634,8 @@ ul {
 
 .nm-card-image {
   background-image: url("../images/logos/nm-logo.png");
+  background-size: cover;
+  height: 100%;
 }
 
 .treehouse-card {
@@ -638,6 +669,8 @@ ul {
 
 .treehouse-card-image {
   background-image: url("../images/logos/treehouse-logo.png");
+  background-size: cover;
+  height: 100%;
 }
 
 .scion-card {
@@ -671,6 +704,8 @@ ul {
 
 .scion-card-image {
   background-image: url("../images/logos/scion-logo.png");
+  background-size: cover;
+  height: 100%;
 }
 
 .github-social {
@@ -862,15 +897,16 @@ img {
   flex-direction: column;
   flex-wrap: nowrap;
   padding-bottom: 10px;
+  margin: auto;
   margin-top: 10px;
   align-items: center;
-  width: 356px;
+  width: 100%;
 }
 @media (min-width: 993px) {
   .blurb-container {
     margin: auto;
     margin-left: 250px;
-    width: 74%;
+    width: calc(100vw - 270px);
   }
 }
 @media (min-width: 1200px) {

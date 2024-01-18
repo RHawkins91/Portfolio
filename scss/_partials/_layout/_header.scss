@@ -3,10 +3,18 @@
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	margin: auto;
+	justify-content: center;
+	width: calc(100vw - 25px);
+	// margin: auto;
+	left: 0;
 	@include mq("landscape"){
 		margin-left: 250px;
+		width: calc(100vw - 270px)
+	}
+	img {
+		margin: auto;
+		max-height: 200px;
+		max-width: 200px;
 	}
 	h2 {
 		background: linear-gradient(180deg, rgba(155,79,150,1) 0%, rgba(214,2,112,1) 45%, rgba(0,56,168,1) 85%);
@@ -15,8 +23,13 @@
 		-webkit-text-fill-color: transparent; 
 		-moz-background-clip: text;
 		-moz-text-fill-color: transparent;
-		font-size: 32px;;
 		text-align: center;
+		font-size: 26px;
+		// width: calc(100vw - 25px);
+		margin-left: 5px;
+		@include mq("tablet"){
+			font-size: 32px;
+		}
 		//anim
 		background-size: 1000% 1000%;
 		-webkit-animation: txt-gradient-anim 10s ease infinite;
@@ -37,7 +50,10 @@
 		-moz-animation: txt-gradient-anim 10s ease infinite;
 		-o-animation: txt-gradient-anim 10s ease infinite;
 		animation: txt-gradient-anim 10s ease infinite;
-		font-size: 102px;
+		font-size: 50px;
 		text-align: center;
+		@include mq("tablet"){
+			font-size: 102px;
+		}
 	}
 }

@@ -4,36 +4,34 @@
 	flex-direction: column;
 	flex-wrap: nowrap;
 	padding-bottom: 10px;
-	border-radius: 20px;
+	border-radius: 10px;
 	border: 5px solid $purple;
 	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5), inset 0 0 10px black;
 	background-color: $black;
 	align-items: center;
+	width: calc(100vw - 25px);
 	max-width: 95%;
 	margin: auto;
 	margin-top: 10px;
 	color: white;
 	h2 {
 		color: white;
-		font-size: 48px;
+		font-size: 44px;
 		line-height: 20px;
 	}
 	@include mq("tablet"){
-		max-width: 90%;
-		margin-left: 40px;
+		width: calc(100% - 25px);
+		// margin-left: 40px;
 	}
 	@include mq("landscape"){
 		flex: 2;
-		// margin-left: 250px;
-		// margin-right: 70px;
-		// width: calc(100% - 347px);
+		width: calc(100% - 347px);
 		margin: auto;
 		margin-left: 270px;
 		margin-top: 10px;
-		max-width: 73%;
 	}
 	@include mq("desktop"){
-		max-width: 78%
+		width: calc(100% - 300px);
 	}
 	.contact-form {
 		display: grid;
@@ -45,6 +43,7 @@
 			justify-items: center;
 			width: 100%;
 			select {
+				width: 70%;
 				text-align: center;
 				border-radius: 10px;
 				border: 2px solid $purple;
@@ -67,6 +66,10 @@
 				background-color: $black;
 				box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5), inset 0 0 10px black;
 				color: white;
+				width: 70%;
+				@include mq("tablet"){
+					width: 95%;
+				}
 			}
 		}
 		.form-email-inputs {
@@ -84,6 +87,10 @@
 				background-color: $black;
 				box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5), inset 0 0 10px black;
 				color: white;
+				width: 70%;
+				@include mq("tablet"){
+					width: 95%;
+				}
 			}
 		}
 		.contact-email-message {
@@ -95,7 +102,8 @@
 				border: 2px solid $purple;
 				background-color: $black;
 				box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5), inset 0 0 10px black;
-				width: 252px;
+				// width: 252px;
+				width: 70%;
 				color: white;
 				@include mq("tablet") {
 					width: 100%;
@@ -108,8 +116,11 @@
 			grid-template-columns: 45% 45%;
 			justify-items: center;
 			grid-gap: 20px;
+			width: 80%;
+			margin: auto;
 			input {
-				width: 150px;
+				// width: 150px;
+				// width: 70%;
 				border-radius: 10px;
 				border: 2px solid $purple;
 				background-color: $black;

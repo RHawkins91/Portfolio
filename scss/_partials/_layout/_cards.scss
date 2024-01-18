@@ -1,33 +1,33 @@
 .card-container {
 	flex: 2;
 	display: grid;
-	// flex-direction: column;
-	// flex-shrink: 0;
 	grid-template-columns: 100%;
-	// grid-template-rows: 500px;
 	grid-gap: 20px;
-	max-width: 95%;
+	width: calc(100vw - 20px);
 	margin: auto;
+	// margin-left: 5px;
+	// margin-right: 5px;
 	@include mq("tablet"){
 		display: grid;
 		grid-template-columns: 50% 50%;
 		// grid-template-rows: 50% 30%;
 		// padding-left: 270px;
-		max-width: 90%;
+		width: calc(100vw - 35px);
 		grid-gap: 10px;
 		// margin: auto;
 	}
 	@include mq("landscape"){
 		display: grid;
-		grid-template-columns: 49% 49%;
+		grid-template-columns: 45% 45%;
 		// grid-template-rows: 50% 50%;
 		padding-left: 270px;
 		grid-gap: 10px;
-		max-width: 90%;
+		width: calc(100vw - 270px);
 		padding-bottom: 80px;
 	}
 	@include mq("desktop"){
 		grid-template-columns: 32% 32% 32%;
+		width: calc(100vw - 270px);
 	}
 }
 .card {
@@ -44,7 +44,7 @@
 	line-height: 18px;
 	padding-bottom: 10px;
 	justify-content: center;
-	width: 100%;
+	max-width: 100%;
 	min-height: 450px;
 	box-sizing: border-box;
 	color: white;
@@ -55,7 +55,7 @@
 		color: white;
 	}
 	@include mq("landscape"){
-		max-width: 100%;
+		// max-width: 100%;
 	}
 }
 .card-image {
@@ -70,7 +70,7 @@
 }
 .card-title {
 	font-size: 24px;
-	width: 100%;
+	width: 95%;
 	padding-bottom: 5px;
 	text-align: center;
 	padding-left: 5px;
@@ -95,4 +95,6 @@
 .card-blurb {
 	text-align: center;
 	min-height: max-content;
+	padding-left: 5px;
+	padding-right: 5px;
 }

@@ -24,6 +24,7 @@
 		padding-left: 270px;
 		grid-gap: 10px;
 		max-width: 90%;
+		padding-bottom: 80px;
 	}
 	@include mq("desktop"){
 		grid-template-columns: 32% 32% 32%;
@@ -34,16 +35,25 @@
 	grid-template-columns: 100%;
 	grid-template-rows: 10% 80% 10%;
 	grid-row-gap: 0px;
-	background-color: $purple;
+	background-color: $black;
+	border: 5px solid $purple;
 	border-radius: 10px;
-	-webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
-	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5), inset 0 0 10px black;
+	-moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5), inset 0 0 10px black;
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5), inset 0 0 10px black;
 	line-height: 18px;
 	padding-bottom: 10px;
 	justify-content: center;
 	width: 100%;
 	min-height: 450px;
+	box-sizing: border-box;
+	color: white;
+	h2 {
+		color: white;
+	}
+	p {
+		color: white;
+	}
 	@include mq("landscape"){
 		// min-height: 450px;
 		max-width: 100%;
@@ -56,8 +66,8 @@
 	display: block;
 	background-size: cover;
 	background-repeat: no-repeat;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 .card-title {
 	font-size: 24px;

@@ -6,21 +6,25 @@
 	padding-bottom: 10px;
 	border-radius: 20px;
 	border: 5px solid $purple;
-	-webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
-	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
-	background-color: $purple;
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5), inset 0 0 10px black;
+	background-color: $black;
 	align-items: center;
 	max-width: 95%;
 	margin: auto;
 	margin-top: 10px;
+	color: white;
+	h2 {
+		color: white;
+		font-size: 48px;
+		line-height: 20px;
+	}
 	@include mq("tablet"){
 		max-width: 90%;
 		margin-left: 40px;
 	}
 	@include mq("landscape"){
 		flex: 2;
-		// margin-left: 270px;
+		// margin-left: 250px;
 		// margin-right: 70px;
 		// width: calc(100% - 347px);
 		margin: auto;
@@ -29,7 +33,7 @@
 		max-width: 73%;
 	}
 	@include mq("desktop"){
-		max-width: 77.5%
+		max-width: 78%
 	}
 	.contact-form {
 		display: grid;
@@ -42,6 +46,11 @@
 			width: 100%;
 			select {
 				text-align: center;
+				border-radius: 10px;
+				border: 2px solid $purple;
+				background-color: $black;
+				box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5), inset 0 0 10px black;
+				color: white;
 			}
 		}
 		.form-names {
@@ -51,6 +60,13 @@
 			justify-items: center;
 			@include mq("tablet"){
 				grid-template-columns: 50% 50%;
+			}
+			input {
+				border-radius: 10px;
+				border: 2px solid $purple;
+				background-color: $black;
+				box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5), inset 0 0 10px black;
+				color: white;
 			}
 		}
 		.form-email-inputs {
@@ -63,6 +79,11 @@
 			}
 			input {
 				height: 32px;
+				border-radius: 10px;
+				border: 2px solid $purple;
+				background-color: $black;
+				box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5), inset 0 0 10px black;
+				color: white;
 			}
 		}
 		.contact-email-message {
@@ -70,7 +91,12 @@
 			grid-template-columns: 100%;
 			justify-items: center;
 			textarea {
+				border-radius: 10px;
+				border: 2px solid $purple;
+				background-color: $black;
+				box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5), inset 0 0 10px black;
 				width: 252px;
+				color: white;
 				@include mq("tablet") {
 					width: 100%;
 					margin: auto;
@@ -84,7 +110,16 @@
 			grid-gap: 20px;
 			input {
 				width: 150px;
-				border-radius: 3px;
+				border-radius: 10px;
+				border: 2px solid $purple;
+				background-color: $black;
+				box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5), inset 0 0 10px black;
+				color: white;
+			}
+			input:hover {
+				cursor: pointer;
+				background-color: $purple;
+				border-color: lighten($purple, 10%);
 			}
 		}
 	}

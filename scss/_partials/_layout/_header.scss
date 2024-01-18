@@ -6,7 +6,7 @@
 	align-items: center;
 	margin: auto;
 	@include mq("landscape"){
-		margin-left: 270px;
+		margin-left: 250px;
 	}
 	h1 {
 		background: linear-gradient(180deg, rgba(155,79,150,1) 0%, rgba(214,2,112,1) 45%, rgba(0,56,168,1) 85%);

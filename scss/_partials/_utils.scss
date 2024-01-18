@@ -6,7 +6,7 @@
 @each $project, $colour in $proj-colours{
 	.#{$project}-card {
 		grid-template-rows: 60% 15% 15% 10%;
-		background-color: white;
+		background-color: $black;
 		color: white;
 	}
 	.#{$project}-card:hover {
@@ -71,7 +71,31 @@
 			font-size: 14px;
 			line-height: 16px;
 		}
-	}
+		a {
+					background-color:$colour;
+					// color: $colour;
+					* {
+						// color: $colour;
+						}
+					}
+				}
+	.#{$site}-card:hover {
+		@include mq("landscape"){
+				background-color: $colour;
+				animation: hover-scale 1s ease-in-out 0s 1 normal forwards;
+				z-index: 5;
+				* {
+					color: white;
+				}
+				a {
+					background-color: white;
+					color: $colour;
+					* {
+						color: $colour;
+					}
+				}
+			}
+		}
 	.#{$site}-card-image {
 		background-image: url("../images/logos/#{$site}-logo.png");
 		// background-size: cover;

@@ -18,5 +18,9 @@
 	- ~~Logo~~
 	- ~~Social~~
 	- ~~External~~
-- **Styling pass**
+- **Styling passes**
+	- ~~First~~
+	- Final
 - **Peer testing**
+	- First round
+	- Second round

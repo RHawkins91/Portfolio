@@ -98,8 +98,9 @@ img {
 	@include mq("landscape"){
 		margin: auto;
 		margin-left: 270px;
-		// margin-right: 70px;
-		// width: calc(100% - 277px);
+		width: 74%;
+	}
+	@include mq("desktop"){
 		width: 79%;
 	}
 	p {

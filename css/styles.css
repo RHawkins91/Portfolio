@@ -141,7 +141,7 @@ ul {
     max-width: 73%;
   }
 }
-@media (min-width: 1080px) {
+@media (min-width: 1200px) {
   .contact-form-container {
     max-width: 77.5%;
   }
@@ -297,7 +297,7 @@ ul {
     max-width: 90%;
   }
 }
-@media (min-width: 1080px) {
+@media (min-width: 1200px) {
   .card-container {
     grid-template-columns: 32% 32% 32%;
   }
@@ -695,6 +695,11 @@ img {
   .blurb-container {
     margin: auto;
     margin-left: 270px;
+    width: 74%;
+  }
+}
+@media (min-width: 1200px) {
+  .blurb-container {
     width: 79%;
   }
 }

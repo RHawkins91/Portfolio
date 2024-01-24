@@ -41,6 +41,52 @@
 				</h2>
 			</div>
 		</div>
+		<div class="example-container">
+			<div class="code-card">
+				<pre>	
+					<code>
+@each $section, $colour in $section-colours {
+	.#{$section} {
+		background-color: white;
+		transition: 0.5s ease;
+		& .#{$section}-icon {
+		background-color: $colour;
+		color: white;
+		}
+		& button {
+			@include button;
+			border-color: $colour;
+			background-color: $colour;
+			width: 130px;
+			height: 47px;
+			font-size: 17px;
+		}
+	}
+	.#{$section}:hover {
+		background-color: $colour;
+		color: white;
+		transform: translate(0, -10px);
+		transition: 0.5s ease;
+		cursor: pointer;
+		& .#{$section}-icon {
+			background-color: white;
+			color: $colour;
+		}
+		& button {
+			@include button;
+			border-color: white;
+			background-color: white;
+			color: $colour;
+		}
+	}
+} 
+					</code>
+				</pre>
+				<p class="code-example-blurb">
+					This is an <a href="https://sass-lang.com/documentation/at-rules/control/each/">each</a> loop I used in my HTML and CSS assessment to quickly and easily colour the various company divisions.<br> Coded in Sass, it loops through a <a href="https://sass-lang.com/documentation/values/maps/">map</a> that contains the section name as the key, and the section colour as the value. 
+				</p>
+			</div>
+		</div>
 		<div class="navbar">
 			<a href="../index.html" title="Home" class="logo">R</a>
 			<div class="burger-button">

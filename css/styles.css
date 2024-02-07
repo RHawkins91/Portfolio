@@ -1209,4 +1209,13 @@ img {
   box-shadow: 40vmin 0 5.5465949289vmin currentColor;
 }
 
+.nameplate-text span {
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+span.name-anim {
+  opacity: 1;
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -947,16 +947,6 @@ img {
     width: 79%;
   }
 }
-.example-container pre {
-  background-color: black;
-  border: 1px solid #9B4F96;
-  background-size: 100%;
-  font-size: 13px;
-}
-.example-container pre code {
-  font-family: monospace !important;
-  text-align: left;
-}
 
 .code-card {
   border-radius: 20px;
@@ -968,6 +958,16 @@ img {
   text-align: center;
   color: white;
   padding: 5px 5px 5px 5px;
+}
+.code-card pre {
+  background-color: black;
+  border: 1px solid #9B4F96;
+  background-size: 100%;
+  font-size: 13px;
+}
+.code-card pre .code-block {
+  font-family: monospace !important;
+  text-align: left;
 }
 
 .copyright-notice {

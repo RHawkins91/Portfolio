@@ -152,18 +152,6 @@ img {
     @include mq("desktop"){
         width: 79%;
     }
-    pre {
-        // align-content: flex-start;
-        background-color: black;
-        border: 1px solid $purple;
-        background-size: 100%;
-        font-size: 13px;
-        code {
-            font-family: monospace!important;
-            text-align: left;
-            // align-content: flex-end!important;
-        }
-    }
 }
 .code-card {
     border-radius: 20px;
@@ -174,7 +162,19 @@ img {
     background-color: $black;
     text-align: center;
     color: white;
-    padding: 5px 5px 5px 5px
+    padding: 5px 5px 5px 5px;
+    pre {
+        // align-content: flex-start;
+        background-color: black;
+        border: 1px solid $purple;
+        background-size: 100%;
+        font-size: 13px;
+        .code-block {
+            font-family: monospace!important;
+            text-align: left;
+            // align-content: flex-end!important;
+        }
+    }
 }
 
 .copyright-notice {

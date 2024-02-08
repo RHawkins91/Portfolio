@@ -48,3 +48,5 @@ function show_navbar() {
 		navActive = false;
 	}
 };
+
+//Form validation

@@ -89,6 +89,38 @@
 					This is an <a href="https://sass-lang.com/documentation/at-rules/control/each/">each</a> loop I used in my HTML and CSS assessment to quickly and easily colour the various company divisions.<br> Coded in Sass, it loops through a <a href="https://sass-lang.com/documentation/values/maps/">map</a> that contains the section name as the key, and the section colour as the value.
 				</p>
 			</div>
+			<div class="code-card">
+				<h1 class="code-example-blurb">
+					Portfolio
+				</h1>
+				<pre>	
+					<code class="code-block">
+const navbar = document.getElementById("navbar");
+const menuButton = document.getElementById("menu-btn");
+let navActive = false;
+
+menuButton.onclick = function() {show_navbar()};
+
+function show_navbar() {
+	if (navActive === false) {
+		navbar.classList.add("nav-active");
+		menuButton.style.animation = "button-spin-1 0.4s ease-in-out 0s 1 normal none";
+		navActive = true;
+	} else {
+		navbar.classList.remove("nav-active");
+		menuButton.style.animation = "button-spin-2 0.4s ease-in-out 0s 1 reverse none";
+		navActive = false;
+		setTimeout(() => {
+			menuButton.style.animation = "logo-pulse 1.5s ease-in-out 0s infinite normal both"
+		}, 400)
+	}
+};
+					</code>
+				</pre>
+				<p class="code-example-blurb">
+					This is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions">Javascript function</a> I used in this very website to animate the logo and navigation bar transition.<br> Coded in pure Javascript, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event">it listens for a click or touchscreen press</a> on the logo, adds or removes an <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class"> HTML class</a> to the navbar element - applying or removing pre-written <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS styling</a> in the process, and animates the logo with either the "spin" transition animations or the idle "pulse" animation depending on the current state of the navbar.
+				</p>
+			</div>
 		</div>
 		<a class="logo" id="menu-btn">R</a>
 		<div class="navbar" id="navbar">

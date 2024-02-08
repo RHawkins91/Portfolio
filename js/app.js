@@ -64,7 +64,7 @@ function validate_form(){
 	let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 	let emailResult = emailRegex.test(emailAddress)
 
-	if(firstName||lastName||emailAddress||subject||message == "") {
+	if(firstName === 0||lastName.length === 0||emailAddress.length === 0||subject.length === 0||message.length === 0) {
 		alert('All fields are required');
 		return false;
 	}

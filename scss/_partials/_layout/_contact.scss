@@ -23,7 +23,6 @@
 		// margin-left: 40px;
 	}
 	@include mq("landscape"){
-		flex: 2;
 		width: calc(100% - 347px);
 		margin: auto;
 		margin-left: 270px;
@@ -40,9 +39,10 @@
 			display: grid;
 			grid-template-columns: 100%;
 			justify-items: center;
-			width: 100%;
+			// width: 100%;
 			select {
-				width: 70%;
+				margin-left: 5px;
+				width: calc(100% + 5px);
 				text-align: center;
 				border-radius: 10px;
 				border: 2px solid $purple;
@@ -65,7 +65,7 @@
 				background-color: $black;
 				box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5), inset 0 0 10px black;
 				color: white;
-				width: 70%;
+				width: 95%;
 				@include mq("tablet"){
 					width: 95%;
 				}
@@ -86,7 +86,7 @@
 				background-color: $black;
 				box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5), inset 0 0 10px black;
 				color: white;
-				width: 70%;
+				width: 95%;
 				@include mq("tablet"){
 					width: 95%;
 				}
@@ -102,7 +102,7 @@
 				background-color: $black;
 				box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5), inset 0 0 10px black;
 				// width: 252px;
-				width: 70%;
+				width: 95%;
 				color: white;
 				@include mq("tablet") {
 					width: 100%;
@@ -115,7 +115,7 @@
 			grid-template-columns: 45% 45%;
 			justify-items: center;
 			grid-gap: 20px;
-			width: 80%;
+			width: 97%;
 			margin: auto;
 			input {
 				// width: 150px;

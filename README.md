@@ -14,9 +14,12 @@ https://rhawkins91.github.io/Portfolio/
 - ~~**Add form validation**~~
 	- ~~Required Fields~~
 	- ~~Regex~~
-- **Add image enlarge and layer functionality**
-	- Attempt to build from scratch
-	- Use Lightbox if first fails
-- **Peer testing**
+- ~~**Peer testing round one**~~
+	- ~~Fix Issues~~
+- **Make check for screen height for navbar styling**
+	- New breakpoints(?)
+	- Javascript(?)
+	- Some other method(?)
+- **Peer testing round two**
 	- Fix Issues
 - **Upload to cPanel**

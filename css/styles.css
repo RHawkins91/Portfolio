@@ -146,7 +146,6 @@ ul {
 }
 
 .contact-form-container {
-  flex: 2;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -183,7 +182,7 @@ ul {
 }
 @media (min-width: 1200px) {
   .contact-form-container {
-    width: calc(100% - 300px);
+    width: calc(100% - 317px);
   }
 }
 .contact-form-container .contact-form {
@@ -361,7 +360,6 @@ ul {
 }
 
 .card-container {
-  flex: 2;
   display: grid;
   grid-template-columns: 100%;
   grid-gap: 20px;
@@ -789,10 +787,6 @@ img {
   overflow-x: hidden;
 }
 
-.content {
-  flex: 2;
-}
-
 @-webkit-keyframes txt-gradient-anim {
   0% {
     background-position: 55% 0%;
@@ -875,7 +869,6 @@ img {
 }
 
 .blurb-container {
-  flex: 2;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -888,8 +881,8 @@ img {
 @media (min-width: 993px) {
   .blurb-container {
     margin: auto;
-    margin-left: 250px;
-    width: calc(100vw - 270px);
+    margin-left: 270px;
+    width: calc(100% - 347px);
   }
 }
 @media (min-width: 1200px) {
@@ -910,7 +903,6 @@ img {
 }
 
 .example-container {
-  flex: 2;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -923,8 +915,8 @@ img {
 @media (min-width: 993px) {
   .example-container {
     margin: auto;
-    margin-left: 250px;
-    width: calc(100vw - 270px);
+    margin-left: 270px;
+    width: calc(100% - 347px);
   }
 }
 @media (min-width: 1200px) {
@@ -948,11 +940,33 @@ img {
   background-color: black;
   border: 1px solid #9B4F96;
   background-size: 100%;
-  font-size: 13px;
+  font-size: 10px;
+}
+@media (min-width: 769px) {
+  .code-card pre {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .code-card pre {
+    font-size: 20px;
+  }
 }
 .code-card pre .code-block {
   font-family: monospace !important;
   text-align: left;
+  display: block;
+  padding-left: 10px;
+}
+@media (min-width: 769px) {
+  .code-card pre .code-block {
+    padding-left: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .code-card pre .code-block {
+    padding-left: 50px;
+  }
 }
 
 .copyright-notice {

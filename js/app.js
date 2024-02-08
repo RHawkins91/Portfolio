@@ -46,6 +46,9 @@ function show_navbar() {
 		navbar.classList.remove("nav-active");
 		menuButton.style.animation = "button-spin-2 0.4s ease-in-out 0s 1 reverse none";
 		navActive = false;
+		setTimeout(() => {
+			menuButton.style.animation = "logo-pulse 1.5s ease-in-out 0s infinite normal both"
+		}, 400)
 	}
 };
 

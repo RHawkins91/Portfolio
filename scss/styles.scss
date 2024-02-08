@@ -422,18 +422,19 @@ span.name-anim{
     color: $flag-black;
     box-shadow: inset 0 0 10px black;
     z-index: 100;
+    animation: logo-pulse 1.5s ease-in-out 0s infinite normal both;
     @include mq("landscape"){
         font-size: 45px;
         border-radius: 90px;
         width: 90px;
     }
 }
-#menu-btn.nav-btn-clicked-on {
-    animation: button-spin-1 .4s ease-in-out 0s 1 normal none;
-}
-#menu-btn.nav-btn-clicked-off {
-    animation: button-spin-1 .4s ease-in-out 0s 1 reverse none;
-}
+// #menu-btn.nav-btn-clicked-on {
+//     animation: button-spin-1 .4s ease-in-out 0s 1 normal none;
+// }
+// #menu-btn.nav-btn-clicked-off {
+//     animation: button-spin-1 .4s ease-in-out 0s 1 reverse none;
+// }
 
 @keyframes button-spin-1 {
     0% {
@@ -451,5 +452,18 @@ span.name-anim{
 
     100% {
         transform: rotate(360deg);
+    }
+}
+@keyframes logo-pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }

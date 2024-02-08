@@ -1,15 +1,14 @@
 .navbar {
+	padding-top: 100px;
 	width: 230px;
-	display: none;
+	display: flex;
 	padding-right: 5px;
 	flex: 200px 0 0;
     position: fixed;
-	top: 0;
 	left: 0;
 	height: calc(100% - 10px);
 	flex-direction: column;
 	justify-content: flex-start;
-	// align-items: center;
 	border: 5px solid $purple;
 	background-color: $black;
 	border-radius: 0px 5px 0px 5px;
@@ -18,8 +17,10 @@
 	gap: -5px;
 	// flex-basis: 50px;
 	z-index: 2;
+	top: -150vh;
+	transition: .4s ease;
 	@include mq("landscape"){
-		display: flex;
+		// display: flex;
 	}
 	h1{
 		color: white;
@@ -56,19 +57,6 @@
 		animation: txt-gradient-anim 4s ease infinite;
 		text-align: center;
 	}
-	.logo {
-		margin-top: 20px;
-		font-size: 45px;
-		text-decoration: none;
-		background-color: $flag-purple;
-		border: 5px solid $flag-purple;
-		border-radius: 90px;
-		text-align: center;
-		align-self: center;
-		width: 90px;
-		color: $flag-black;
-		box-shadow: inset 0 0 10px black;
-	}
 	.socials-container {
 		display: flex;
 		flex-direction: row;
@@ -76,7 +64,12 @@
 			text-decoration: none;
 		}
 	}
-	.burger-button {
-		display: none;
-	}
+	// .burger-button {
+	// 	display: none;
+	// }
+}
+
+.nav-active {
+	top: 0;
+	// transition: .4s ease;
 }

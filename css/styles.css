@@ -296,12 +296,12 @@ ul {
 }
 
 .navbar {
+  padding-top: 100px;
   width: 230px;
-  display: none;
+  display: flex;
   padding-right: 5px;
   flex: 200px 0 0;
   position: fixed;
-  top: 0;
   left: 0;
   height: calc(100% - 10px);
   flex-direction: column;
@@ -313,11 +313,8 @@ ul {
   color: white;
   gap: -5px;
   z-index: 2;
-}
-@media (min-width: 993px) {
-  .navbar {
-    display: flex;
-  }
+  top: -150vh;
+  transition: 0.4s ease;
 }
 .navbar h1 {
   color: white;
@@ -351,19 +348,6 @@ ul {
   animation: txt-gradient-anim 4s ease infinite;
   text-align: center;
 }
-.navbar .logo {
-  margin-top: 20px;
-  font-size: 45px;
-  text-decoration: none;
-  background-color: #9B59D0;
-  border: 5px solid #9B59D0;
-  border-radius: 90px;
-  text-align: center;
-  align-self: center;
-  width: 90px;
-  color: #000000;
-  box-shadow: inset 0 0 10px black;
-}
 .navbar .socials-container {
   display: flex;
   flex-direction: row;
@@ -371,8 +355,9 @@ ul {
 .navbar .socials-container a {
   text-decoration: none;
 }
-.navbar .burger-button {
-  display: none;
+
+.nav-active {
+  top: 0;
 }
 
 .card-container {
@@ -1216,6 +1201,55 @@ img {
 
 span.name-anim {
   opacity: 1;
+}
+
+.logo {
+  position: fixed;
+  top: 25px;
+  left: 65px;
+  font-size: 45px;
+  text-decoration: none;
+  background-color: #9B59D0;
+  border: 5px solid #9B59D0;
+  border-radius: 90px;
+  text-align: center;
+  align-self: center;
+  width: 90px;
+  color: #000000;
+  box-shadow: inset 0 0 10px black;
+  z-index: 100;
+}
+@media (min-width: 993px) {
+  .logo {
+    font-size: 45px;
+    border-radius: 90px;
+    width: 90px;
+  }
+}
+
+#menu-btn.nav-btn-clicked-on {
+  animation: button-spin-1 0.4s ease-in-out 0s 1 normal none;
+}
+
+#menu-btn.nav-btn-clicked-off {
+  animation: button-spin-1 0.4s ease-in-out 0s 1 reverse none;
+}
+
+@keyframes button-spin-1 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes button-spin-2 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -53,3 +53,26 @@ function show_navbar() {
 };
 
 //Form validation
+
+function validate_form(){
+	let firstName = document.getElementById("firstName").value;
+	let lastName = document.getElementById("lastName").value;
+	let emailAddress = document.getElementById("emailAddress").value;
+	let subject = document.getElementById("subject").value;
+	let message = document.getElementById("message").value;
+
+	let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+	let emailResult = emailRegex.test(emailAddress)
+
+	if(firstName||lastName||emailAddress||subject||message == "") {
+		alert('All fields are required');
+		return false;
+	}
+	if(emailResult == false) {
+		alert("Please enter a valid email address");
+		return false;
+	}
+	else {
+		return true;
+	}
+}

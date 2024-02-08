@@ -11,9 +11,9 @@ https://rhawkins91.github.io/Portfolio/
 - ~~**Add slideout for sidebar**~~
 	- ~~Menu slideout functionality~~
 	- ~~Animation~~
-- **Add form validation**
-	- Required Fields
-	- Regex
+- ~~**Add form validation**~~
+	- ~~Required Fields~~
+	- ~~Regex~~
 - **Add image enlarge and layer functionality**
 	- Attempt to build from scratch
 	- Use Lightbox if first fails

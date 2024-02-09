@@ -14,6 +14,7 @@ html {
 	-moz-animation: bg-gradient-anim 30s ease infinite;
 	-o-animation: bg-gradient-anim 30s ease infinite;
 	animation: bg-gradient-anim 30s ease infinite; 
+    scroll-behavior: smooth;
 
 }
 a:visited {
@@ -173,7 +174,7 @@ img {
         color: white;
     }
     pre {
-        background-color: lighten($black, 10%);
+        background-color: lighten($black, 10%)!important;
         border: 1px solid $purple;
         // background-size: 100%;
         font-size: 10px;
@@ -446,6 +447,7 @@ span.name-anim{
     box-shadow: inset 0 0 10px black;
     z-index: 100;
     animation: logo-pulse 1.5s ease-in-out 0s infinite normal both;
+    user-select: none;
     @include mq("landscape"){
         top: 25px;
         left: 65px;

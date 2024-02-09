@@ -48,6 +48,7 @@
 	min-height: 450px;
 	box-sizing: border-box;
 	color: white;
+	user-select: none;
 	h2 {
 		color: white;
 	}
@@ -90,6 +91,7 @@
 	:first-child {
 		font-size: 13px;
 		padding: 3px;
+		color: white;
 	}
 }
 .card-blurb {

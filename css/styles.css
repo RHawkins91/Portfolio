@@ -91,6 +91,7 @@ ul {
   justify-content: center;
   width: calc(100vw - 25px);
   left: 0;
+  pointer-events: none;
 }
 @media (min-width: 993px) {
   .nameplate {
@@ -427,6 +428,7 @@ ul {
   min-height: 450px;
   box-sizing: border-box;
   color: white;
+  user-select: none;
 }
 .card h2 {
   color: white;
@@ -469,6 +471,7 @@ ul {
 .card-button :first-child {
   font-size: 13px;
   padding: 3px;
+  color: white;
 }
 
 .card-blurb {
@@ -481,7 +484,7 @@ ul {
 .netmatters-card {
   grid-template-rows: 60% 15% 15% 10%;
   background-color: #1a1a1a;
-  color: white;
+  color: white !important;
 }
 
 @media (min-width: 993px) {
@@ -495,10 +498,10 @@ ul {
   }
   .netmatters-card:hover a {
     background-color: white;
-    color: #323544;
+    color: #323544 !important;
   }
   .netmatters-card:hover a * {
-    color: #323544;
+    color: #323544 !important;
   }
 }
 
@@ -530,7 +533,7 @@ ul {
 .netmatters-card-button {
   background-color: #323544;
   border-radius: 10px;
-  color: white;
+  color: white !important;
   text-align: center;
   margin: auto;
   padding: 10px;
@@ -546,7 +549,7 @@ ul {
 .placeholder-card {
   grid-template-rows: 60% 15% 15% 10%;
   background-color: #1a1a1a;
-  color: white;
+  color: white !important;
 }
 
 @media (min-width: 993px) {
@@ -560,10 +563,10 @@ ul {
   }
   .placeholder-card:hover a {
     background-color: white;
-    color: #D60270;
+    color: #D60270 !important;
   }
   .placeholder-card:hover a * {
-    color: #D60270;
+    color: #D60270 !important;
   }
 }
 
@@ -595,7 +598,7 @@ ul {
 .placeholder-card-button {
   background-color: #D60270;
   border-radius: 10px;
-  color: white;
+  color: white !important;
   text-align: center;
   margin: auto;
   padding: 10px;
@@ -618,6 +621,7 @@ ul {
 }
 .nm-card a {
   background-color: #323544;
+  color: white !important;
 }
 @media (min-width: 993px) {
   .nm-card:hover {
@@ -630,7 +634,7 @@ ul {
   }
   .nm-card:hover a {
     background-color: white;
-    color: #323544;
+    color: #323544 !important;
   }
   .nm-card:hover a * {
     color: #323544;
@@ -651,6 +655,7 @@ ul {
 }
 .treehouse-card a {
   background-color: #2e9a4e;
+  color: white !important;
 }
 @media (min-width: 993px) {
   .treehouse-card:hover {
@@ -663,7 +668,7 @@ ul {
   }
   .treehouse-card:hover a {
     background-color: white;
-    color: #2e9a4e;
+    color: #2e9a4e !important;
   }
   .treehouse-card:hover a * {
     color: #2e9a4e;
@@ -684,6 +689,7 @@ ul {
 }
 .scion-card a {
   background-color: #CE4125;
+  color: white !important;
 }
 @media (min-width: 993px) {
   .scion-card:hover {
@@ -696,7 +702,7 @@ ul {
   }
   .scion-card:hover a {
     background-color: white;
-    color: #CE4125;
+    color: #CE4125 !important;
   }
   .scion-card:hover a * {
     color: #CE4125;
@@ -751,6 +757,7 @@ html {
   -moz-animation: bg-gradient-anim 30s ease infinite;
   -o-animation: bg-gradient-anim 30s ease infinite;
   animation: bg-gradient-anim 30s ease infinite;
+  scroll-behavior: smooth;
 }
 
 a:visited {
@@ -977,7 +984,7 @@ img {
   color: white;
 }
 .code-card pre {
-  background-color: #343434;
+  background-color: #343434 !important;
   border: 1px solid #9B4F96;
   font-size: 10px;
 }
@@ -1274,6 +1281,7 @@ span.name-anim {
   box-shadow: inset 0 0 10px black;
   z-index: 100;
   animation: logo-pulse 1.5s ease-in-out 0s infinite normal both;
+  user-select: none;
 }
 @media (min-width: 993px) {
   .logo {

@@ -611,6 +611,71 @@ ul {
   padding: 3px;
 }
 
+.js-array-card {
+  grid-template-rows: 60% 15% 15% 10%;
+  background-color: #1a1a1a;
+  color: white !important;
+}
+
+@media (min-width: 993px) {
+  .js-array-card:hover {
+    background-color: #9B59D0;
+    animation: hover-scale 1s ease-in-out 0s 1 normal forwards;
+    z-index: 5;
+  }
+  .js-array-card:hover * {
+    color: white;
+  }
+  .js-array-card:hover a {
+    background-color: white;
+    color: #9B59D0 !important;
+  }
+  .js-array-card:hover a * {
+    color: #9B59D0 !important;
+  }
+}
+
+.js-array-card-image {
+  background-image: url("../images/projects/js-array-proj.png");
+  background-size: cover;
+  height: 100%;
+}
+
+.js-array-card-title {
+  color: #9B59D0;
+  font-size: 24px;
+  width: 100%;
+  padding-bottom: 5px;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height: 24px;
+}
+
+.js-array-card-blurb {
+  font-size: 18px;
+  color: #9B59D0;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.js-array-card-button {
+  background-color: #9B59D0;
+  border-radius: 10px;
+  color: white !important;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  max-height: 100%;
+  max-width: 100%;
+  font-size: 18px;
+}
+.js-array-card-button :first-child {
+  font-size: 13px;
+  padding: 3px;
+}
+
 .nm-card {
   grid-template-rows: 30% 10% 50% 10%;
 }

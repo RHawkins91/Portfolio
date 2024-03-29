@@ -1359,6 +1359,15 @@ span.name-anim {
   }
 }
 
+.art-card {
+  display: flex;
+  gap: 20px;
+}
+.art-card img {
+  max-width: 192px;
+  max-height: 192px;
+}
+
 @keyframes button-spin-1 {
   0% {
     transform: rotate(0);

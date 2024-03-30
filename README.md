@@ -6,25 +6,20 @@ https://rhawkins91.github.io/Portfolio/
 
 ## TO DO:
 
-- ~~**Add pages**~~
-	- ~~About Me~~
-	- ~~Code Examples~~
-	- ~~SCS Scheme~~
-- ~~**Add content to pages**~~
-	- ~~About Me~~
-	- ~~Code Examples~~
-	- ~~SCS Scheme~~
-- ~~**Connect links**~~
-	- ~~About Me~~
- 	- ~~My Portfolio~~ 
-	- ~~Code Examples~~
-	- ~~SCS Scheme~~
-	- ~~Logo~~
-	- ~~Social~~
-	- ~~External~~
-- **Styling passes**
-	- ~~First~~
-	- ~~Final~~
-- ~~**Peer testing**~~
+- ~~**Add effect to nameplate text**~~
+	- Styling pass
+- ~~**Add slideout for sidebar**~~
+	- ~~Menu slideout functionality~~
+	- ~~Animation~~
+- ~~**Add form validation**~~
+	- ~~Required Fields~~
+	- ~~Regex~~
+- ~~**Peer testing round one**~~
 	- ~~Fix Issues~~
-- ~~**Upload to cPanel**~~
+- **Make check for screen height for navbar styling**
+	- New breakpoints(?)
+	- Javascript(?)
+	- Some other method(?)
+- **Peer testing round two**
+	- Fix Issues
+- **Upload to cPanel**

@@ -35,7 +35,7 @@
 		<div class="container">
 			<div class="content">
 				<div class="nameplate">
-					<h1>
+					<h1 class="nameplate-text">
 						Robert Hawkins
 					</h1>
 					<h2>
@@ -51,19 +51,19 @@
 						<p class="netmatters-card-blurb card-blurb">
 							My Scion Scheme HTML and CSS assessment
 						</p>
-						<a href="http://robert-hawkins.netmatters-scs.co.uk/HTML-Assessment/index.html" class="netmatters-card-button card-button">
+						<a href="http://robert-hawkins.netmatters-scs.co.uk/HTML-Assessment/index.html" target="_blank" class="netmatters-card-button card-button">
 							Find out more <span class="icon-circle-right"></span>
 						</a>
 					</div>
-					<div class="project-card placeholder-card card">
-						<span class="card-image placeholder-card-image"></span>
-						<h2 class="card-title placeholder-card-title">
-							Project 2
+					<div class="project-card js-array-card card">
+						<span class="card-image js-array-card-image"></span>
+						<h2 class="card-title js-array-card-title">
+							Javascript Image Assigner
 						</h2>
-						<p class="card-blurb placeholder-card-blurb">
-							Coming soon
+						<p class="card-blurb js-array-card-blurb">
+							A web application that assigns images to email addresses
 						</p>
-						<a class="card-button placeholder-card-button">
+						<a href="http://js-array.robert-hawkins.netmatters-scs.co.uk/" class="card-button js-array-card-button" target="_blank">
 							Find out more <span class="icon-circle-right"></span>
 						</a>
 					</div>
@@ -121,7 +121,7 @@
 						Contact Me
 					</h2>
 					<p>All fields are required</p>
-					<form class="contact-form" id="contact-form">
+					<form class="contact-form" id="contact-form" onsubmit="validate_form()">
 						<div class="form-dropdown">
 							<select name="contact-purpose" id="form-selector" form="contact-form" required>
 								<option value="" selected>Purpose of your email</option>
@@ -130,15 +130,15 @@
 							</select>
 						</div>
 						<div class="form-names">
-							<input type="text" name="contact-firstName" placeholder="First name" required>
-							<input type="text" name="contact-lastName" placeholder="Last name" required>
+							<input type="text" name="contact-firstName" placeholder="First name" id="firstName" >
+							<input type="text" name="contact-lastName" placeholder="Last name" id="lastName">
 						</div>
 						<div class="form-email-inputs">
-							<input type="email" name="contact-email-address" placeholder="Email address" required>
-							<input type="text" name="contact-email-subject" placeholder="Subject" required>
+							<input type="text" name="contact-email-address" placeholder="Email address" id="emailAddress" >
+							<input type="text" name="contact-email-subject" placeholder="Subject" id="subject">
 						</div>
 						<div class="contact-email-message">
-							<textarea name="contact-email-message-input" form="contact-form" placeholder="Type your message here" required></textarea>
+							<textarea name="contact-email-message-input" form="contact-form" placeholder="Type your message here" id="message"></textarea>
 						</div>
 						<div class="form-buttons">
 							<input type="submit" name="contact-form-submit" value="Submit">
@@ -147,21 +147,17 @@
 					</form>
 				</div>
 			</div>
-			<div class="navbar">
-				<a href="#" title="Home" class="logo">R</a>
-					<div class="burger-button">
-						<input type="checkbox" name="burger" id="burger">
-						<label for="burger"><span class="icon-menu"></span></label>
-					</div>
+			<a class="logo" id="menu-btn">R</a>
+			<div class="navbar" id="navbar">
 				<h1>
 					Navigation
 				</h1>
 				<ul>
 					<li><a href="#" class="nav-link">Home</a></li>
 					<li><a href="pages/about_me.html" class="nav-link">About Me</a></li>
-					<li><a href="#portfolio" class="nav-link">My Portfolio</a></li>
+					<li><a href="#portfolio" class="nav-link">Projects</a></li>
 					<li><a href="pages/code_examples.html" class="nav-link">Code Examples</a></li>
-					<!-- <li><a href="#" class="nav-link">Art Gallery</a></li> -->
+					<li><a href="pages/gallery.html" class="nav-link">Art Gallery</a></li>
 					<li><a href="pages/scs_scheme.html" class="nav-link">SCS Scheme</a></li>
 					<li><a href="#contact-form" class="nav-link">Contact Me</a></li>
 				</ul>
@@ -178,6 +174,7 @@
 				Copyright &#169; 2024 Robert Hawkins, No rights reserved.
 			</div>
 		</footer>
+		<script src="js/app.js"></script>
 	</body>
 </html>
 	

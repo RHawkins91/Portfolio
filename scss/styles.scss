@@ -14,7 +14,14 @@ html {
 	-moz-animation: bg-gradient-anim 30s ease infinite;
 	-o-animation: bg-gradient-anim 30s ease infinite;
 	animation: bg-gradient-anim 30s ease infinite; 
+    scroll-behavior: smooth;
 
+}
+a:visited {
+    color: $flag-purple;
+}
+a:link {
+    color: $flag-purple;
 }
 //BG-Anim
  @-webkit-keyframes bg-gradient-anim {
@@ -44,24 +51,27 @@ body {
 	
 }
 img {
-	border: 2px $purple solid;
+	border: 5px solid $purple;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	box-sizing: border-box;
-	box-shadow: 0em 0em 1em 1em rgb(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5), inset 0 0 10px black;
+    -moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5), inset 0 0 10px black;
+    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5), inset 0 0 10px black;
 }
+
 .container {
 	display: flex;
 	flex-wrap: wrap;
 	overflow-x: hidden;
 }
 .content {
-	flex: 2;
+	// flex: 1;
 }
 
-//Text anim KF
+//Text gradient anim KF
  @-webkit-keyframes txt-gradient-anim {
     0%{background-position:55% 0%}
     50%{background-position:46% 100%}
@@ -102,7 +112,6 @@ img {
 	display: grid;
 }
 .blurb-container {
-	flex: 2;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -114,8 +123,8 @@ img {
 	width: 100%;
 	@include mq("landscape"){
 		margin: auto;
-		margin-left: 250px;
-		width: calc(100vw - 270px)
+		margin-left: 270px;
+		width: calc(100% - 347px);
 	}
 	@include mq("desktop"){
 		width: 79%;
@@ -133,7 +142,6 @@ img {
 	}
 }
 .example-container {
-    flex: 2;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -141,28 +149,15 @@ img {
     margin: auto;
     margin-top: 10px;
     justify-content: flex-start!important;
-    // align-items: center;
-    // width: 356px;
     width: 100%;
+    gap: 10px;
     @include mq("landscape"){
         margin: auto;
-        margin-left: 250px;
-        width: calc(100vw - 270px)
+        margin-left: 270px;
+        width: calc(100% - 347px);
     }
     @include mq("desktop"){
         width: 79%;
-    }
-    pre {
-        // align-content: flex-start;
-        background-color: black;
-        border: 1px solid $purple;
-        background-size: 100%;
-        font-size: 13px;
-        code {
-            font-family: monospace!important;
-            text-align: left;
-            // align-content: flex-end!important;
-        }
     }
 }
 .code-card {
@@ -174,7 +169,34 @@ img {
     background-color: $black;
     text-align: center;
     color: white;
-    padding: 5px 5px 5px 5px
+    padding: 5px 5px 5px 5px;
+    h1 {
+        color: white;
+    }
+    pre {
+        background-color: lighten($black, 10%)!important;
+        border: 1px solid $purple;
+        // background-size: 100%;
+        font-size: 10px;
+        @include mq("tablet"){
+            font-size: 18px;
+        }
+        @include mq("desktop"){
+            font-size: 18px;
+        }
+        .code-block {
+            font-family: monospace!important;
+            text-align: left;
+            display: block;
+            padding-left: 10px;
+            @include mq("tablet") {
+                padding-left: 20px;
+            }
+            @include mq("desktop") {
+                padding-left: 20px;
+            }
+        }
+    }
 }
 
 .copyright-notice {
@@ -396,3 +418,88 @@ img {
     box-shadow: 40vmin 0 5.546594928909799vmin currentColor;
 }
 
+.nameplate-text { 
+    & span {
+        opacity: 0;
+        transition: all 0.4s ease;
+    }
+}
+
+span.name-anim{
+    opacity: 1;
+}
+
+.logo {
+    cursor: pointer;
+    position: fixed;
+    top: 25px;
+    left: 95px;
+    font-size: 26px;
+    text-decoration: none;
+    background-color: $flag-purple;
+    border: 5px solid $flag-purple;
+    border-radius: 90px;
+    text-align: center;
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    color: $flag-black;
+    box-shadow: inset 0 0 10px black;
+    z-index: 100;
+    animation: logo-pulse 1.5s ease-in-out 0s infinite normal both;
+    user-select: none;
+    @include mq("landscape"){
+        top: 25px;
+        left: 65px;
+        font-size: 45px;
+        border-radius: 90px;
+        width: 90px;
+        height: 90px;
+    }
+}
+.art-card-container {
+    grid-template-columns: 100%!important;
+}
+.art-card {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    margin: auto;
+    img {
+        max-width: 192px;
+        max-height: 192px;
+        border: none;
+    }
+}
+
+@keyframes button-spin-1 {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes button-spin-2 {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes logo-pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

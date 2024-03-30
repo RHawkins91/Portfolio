@@ -1360,7 +1360,7 @@ span.name-anim {
 }
 
 .art-card-container {
-  grid-template-columns: 100% !important;
+  grid-template-columns: 80% !important;
 }
 
 .art-card {
@@ -1372,7 +1372,7 @@ span.name-anim {
 .art-card img {
   max-width: 192px;
   max-height: 192px;
-  border: none;
+  border: none !important;
 }
 
 @keyframes button-spin-1 {

@@ -1359,13 +1359,20 @@ span.name-anim {
   }
 }
 
+.art-card-container {
+  grid-template-columns: 100%;
+}
+
 .art-card {
   display: flex;
   gap: 20px;
+  padding: 10px;
+  margin: auto;
 }
 .art-card img {
   max-width: 192px;
   max-height: 192px;
+  border: none;
 }
 
 @keyframes button-spin-1 {

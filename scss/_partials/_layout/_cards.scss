@@ -99,18 +99,65 @@
 	min-height: max-content;
 	padding-left: 5px;
 	padding-right: 5px;
+	width: 100%;
 }
 .art-card-container {
-    grid-template-columns: 90%!important;
+    grid-template-columns: 95%!important;
+    min-width: calc(100vw - 270px)!important;
+}
+.art-blurb {
+	width: fit-content;
+	// padding: 20px;
+	justify-self: center;
+	p {
+		border-radius: 20px;
+		border: 5px solid $purple;
+		-webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5), inset 0 0 10px black;
+		-moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5), inset 0 0 10px black;
+		box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5), inset 0 0 10px black;
+		background-color: $black;
+		text-align: center;
+		color: white;
+		padding: 20px;
+		.comm-status {
+			color: red;
+		}
+	}
 }
 .art-card {
-    display: flex;
-    gap: 20px;
-    padding: 10px;
-    margin: auto;
+	display: grid;
+	grid-template-columns: 100%;
+	margin: auto;
+	padding: 20px;
+	grid-row-gap: -10px;
+}
+.art-card-title {
+	line-height: 20px;
+}
+.art-card-images {
+    display: grid;
+    // padding: 20px;
+    // margin: auto;
+    // width: 100%;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 10px;
     img {
         max-width: 192px;
         max-height: 192px;
         border: none!important;
+        // margin: 10px;
     }
+    img:hover {
+		animation: art-scale .8s ease-in-out 0s 1 normal forwards;
+		z-index: 5;
+    }
+}
+@keyframes art-scale {
+  0% {
+	transform: scale(1);
+  }
+
+  100% {
+	transform: scale(2);
+  }
 }

@@ -138,7 +138,7 @@ img {
 		background-color: $black;
 		text-align: center;
 		color: white;
-		padding: 5px 5px 5px 5px
+		padding: 5px 5px 5px 5px;
 	}
 }
 .example-container {
@@ -455,20 +455,6 @@ span.name-anim{
         border-radius: 90px;
         width: 90px;
         height: 90px;
-    }
-}
-.art-card-container {
-    grid-template-columns: 90%!important;
-}
-.art-card {
-    display: flex;
-    gap: 20px;
-    padding: 10px;
-    margin: auto;
-    img {
-        max-width: 192px;
-        max-height: 192px;
-        border: none!important;
     }
 }
 

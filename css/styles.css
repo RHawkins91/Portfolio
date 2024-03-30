@@ -479,24 +479,68 @@ ul {
   min-height: max-content;
   padding-left: 5px;
   padding-right: 5px;
+  width: 100%;
 }
 
 .art-card-container {
-  grid-template-columns: 90% !important;
+  grid-template-columns: 95% !important;
+  min-width: calc(100vw - 270px) !important;
+}
+
+.art-blurb {
+  width: fit-content;
+  justify-self: center;
+}
+.art-blurb p {
+  border-radius: 20px;
+  border: 5px solid #9B4F96;
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5), inset 0 0 10px black;
+  -moz-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5), inset 0 0 10px black;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5), inset 0 0 10px black;
+  background-color: #1a1a1a;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+.art-blurb p .comm-status {
+  color: red;
 }
 
 .art-card {
-  display: flex;
-  gap: 20px;
-  padding: 10px;
+  display: grid;
+  grid-template-columns: 100%;
   margin: auto;
+  padding: 20px;
+  grid-row-gap: -10px;
 }
-.art-card img {
+
+.art-card-title {
+  line-height: 20px;
+}
+
+.art-card-images {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 10px;
+}
+.art-card-images img {
   max-width: 192px;
   max-height: 192px;
   border: none !important;
 }
+.art-card-images img:hover {
+  animation: art-scale 0.8s ease-in-out 0s 1 normal forwards;
+  z-index: 5;
+}
 
+@keyframes art-scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
 .netmatters-card {
   grid-template-rows: 60% 15% 15% 10%;
   background-color: #1a1a1a;
@@ -1373,22 +1417,6 @@ span.name-anim {
     width: 90px;
     height: 90px;
   }
-}
-
-.art-card-container {
-  grid-template-columns: 90% !important;
-}
-
-.art-card {
-  display: flex;
-  gap: 20px;
-  padding: 10px;
-  margin: auto;
-}
-.art-card img {
-  max-width: 192px;
-  max-height: 192px;
-  border: none !important;
 }
 
 @keyframes button-spin-1 {

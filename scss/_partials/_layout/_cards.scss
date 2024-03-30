@@ -100,3 +100,17 @@
 	padding-left: 5px;
 	padding-right: 5px;
 }
+.art-card-container {
+    grid-template-columns: 90%!important;
+}
+.art-card {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    margin: auto;
+    img {
+        max-width: 192px;
+        max-height: 192px;
+        border: none!important;
+    }
+}

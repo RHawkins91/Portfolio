@@ -481,6 +481,22 @@ ul {
   padding-right: 5px;
 }
 
+.art-card-container {
+  grid-template-columns: 90% !important;
+}
+
+.art-card {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  margin: auto;
+}
+.art-card img {
+  max-width: 192px;
+  max-height: 192px;
+  border: none !important;
+}
+
 .netmatters-card {
   grid-template-rows: 60% 15% 15% 10%;
   background-color: #1a1a1a;
@@ -1360,7 +1376,7 @@ span.name-anim {
 }
 
 .art-card-container {
-  grid-template-columns: 100% !important;
+  grid-template-columns: 90% !important;
 }
 
 .art-card {
@@ -1372,7 +1388,7 @@ span.name-anim {
 .art-card img {
   max-width: 192px;
   max-height: 192px;
-  border: none;
+  border: none !important;
 }
 
 @keyframes button-spin-1 {

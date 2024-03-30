@@ -458,7 +458,7 @@ span.name-anim{
     }
 }
 .art-card-container {
-    grid-template-columns: 100%!important;
+    grid-template-columns: 90%!important;
 }
 .art-card {
     display: flex;
@@ -468,7 +468,7 @@ span.name-anim{
     img {
         max-width: 192px;
         max-height: 192px;
-        border: none;
+        border: none!important;
     }
 }
 
